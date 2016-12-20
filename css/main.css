@@ -1,0 +1,369 @@
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+@font-face {
+  font-family: 'AdihausDIN-Regular';
+  src: url('../fonts/AdihausDIN-Regular.eot?#iefix') format('embedded-opentype'),  
+  url('../fonts/AdihausDIN-Regular.woff') format('woff'), 
+  url('../fonts/AdihausDIN-Regular.ttf')  format('truetype'), 
+  url('../fonts/AdihausDIN-Regular.svg#AdihausDIN-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'AdihausDIN-Cn';
+  src: url('../fonts/AdihausDIN-Cn.eot?#iefix') format('embedded-opentype'),  
+  url('../fonts/AdihausDIN-Cn.woff') format('woff'), 
+  url('../fonts/AdihausDIN-Cn.ttf')  format('truetype'), 
+  url('../fonts/AdihausDIN-Cn.svg#AdihausDIN-Cn') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'adineuePRO-Bold';
+  src: url('../fonts/adineuePRO-Bold.eot?#iefix') format('embedded-opentype'),  
+  url('../fonts/adineuePRO-Bold.otf')  format('opentype'),
+      url('../fonts/adineuePRO-Bold.woff') format('woff'), 
+      url('../fonts/adineuePRO-Bold.ttf')  format('truetype'), 
+      url('../fonts/adineuePRO-Bold.svg#adineuePRO-Bold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body, html {
+    height: 100%;
+}
+
+body{
+	padding-top:0px;
+}
+
+h2{
+	  font-family: 'adineuePRO-Bold';
+
+	text-align: center;
+	font-size:27px;
+	line-height:77px;
+	text-transform:uppercase;
+}
+
+h2.journey{
+	padding-top:100px;
+}
+
+strong{
+	  font-family: 'adineuePRO-Bold';
+}
+
+h3{
+		  font-family: 'adineuePRO-Bold';
+
+	text-align: center;
+	font-size:22px;
+	line-height:45px;
+	text-transform:uppercase;
+	padding-top:20px;
+}
+
+h3.shop{
+padding:73px 0px
+}
+
+#lightgallerythree {
+	padding:0px 15px 15px;
+}
+
+body{
+	font-size:20px;
+	line-height:16px;
+	text-align: center;
+	  font-family: 'AdihausDIN-Regular';
+}
+
+p{
+	padding-bottom:40px;
+	  font-family: 'AdihausDIN-Regular';
+	  line-height:26px;
+
+}
+
+a, a:focus, a:active{color:white;
+text-decoration: none;}
+
+a:hover{color:white;
+text-decoration: none;}
+
+
+
+
+/* HEADER */
+
+
+.navbar {
+	background:white;
+	border:0px;
+	text-align: center;
+	padding:50px;
+	margin-bottom:0px;
+}
+
+.row.noborder{
+	border-bottom:0px solid black;
+}
+
+/** ALIGNMENT */
+
+.right {float:right;}
+.left {float:left;}
+
+/* GRID */
+
+.container{
+	border:1px solid black;
+}
+
+.row {
+	border-bottom:1px solid black;
+}
+
+.gridright{
+	border-right:1px solid black;
+}
+
+
+.gridleft{
+	border-left:1px solid black;
+}
+
+img.grid{
+	padding:15px 0px;
+}
+
+img.gridcenter{
+padding: 15px 0px;
+}
+
+.col-top{
+	border-bottom:0px solid black;
+	padding:15px;
+}
+
+.col-bottom{
+		padding:0px 15px 0px 15px;
+
+}
+
+.mix{
+	padding: 15px 0px;
+}
+
+.col-bottom img.gridcenter{
+	padding-bottom:15px;
+}
+
+.col-sm-4 .col-top{
+padding:0px 15px 0px 15px;
+}
+
+.col-sm-4.gridleft.mixlong, .col-sm-4.gridright.mixlong{
+
+	padding:0px;
+}
+
+.col-sm-4.gridleft.mixlong .col-bottom{
+	padding-bottom:15px;
+}
+
+.col-bottom.garment{
+	border-bottom:0px solid black;
+
+}
+
+img.garment{
+	padding-bottom:15px	;
+	width:100%;
+}
+
+img.garmenttop{
+	padding:0px 15px 15px 15px;
+	width:100%;
+}
+
+img.gridcenter.nopadding{
+	padding-bottom:0px;
+}
+
+.noborderbottom{
+	border-bottom:0px solid white;
+	padding-bottom:0px;
+}
+
+.fullcontent{
+	padding-left:0px;
+	padding-right:0px;
+}
+
+.noborderfull{
+	border-right:0px solid white;
+	border-left:0px solid white;
+	border:0px solid white;
+}
+
+.beginning2{
+	margin-top:-90px
+}
+
+.beginning2-content{
+	padding:77px 50px;
+}
+
+.col-sm-4.themaker{
+	padding:0.5px 15px
+}
+
+h3.threed{
+	padding:111px 30px;
+}
+
+h3.impossible{
+	padding:41px 30px
+}
+
+.makersecond {
+	padding:55px 15px;
+}
+
+.materialone {
+	padding:34px 15px;
+}
+
+.col-bottom.garment .hide{
+top:400px;
+}
+
+img.sm{
+	display: none
+}
+
+/* GREY EFFECT */
+
+img.grayscale {
+    filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 3.5+, IE10 */
+    filter: gray; /* IE6-9 */
+    -webkit-filter: grayscale(100%); /* Chrome 19+ & Safari 6+ */
+    -webkit-transition: all .6s ease; /* Fade to color for Chrome and Safari */
+    -webkit-backface-visibility: hidden; /* Fix for transition flickering */
+}
+
+img.grayscale:hover{
+    filter: none;
+    -webkit-filter: grayscale(0%);
+}
+
+img.grayscale.oui {
+    filter: none;
+    -webkit-filter: grayscale(0%);
+}
+
+svg {
+    background:url(http://4.bp.blogspot.com/-IzPWLqY4gJ0/T01CPzNb1KI/AAAAAAAACgA/_8uyj68QhFE/s400/a2cf7051-5952-4b39-aca3-4481976cb242.jpg);
+}
+
+svg image {
+    transition: all .6s ease;
+}
+
+svg image:hover {
+    opacity: 0;
+}
+
+/* HOVER EFFECT */
+
+.hide, .demo-gallery-poster{
+    position: absolute;
+    top: 130px;
+    width:92% !important;
+    color: white !important;
+    visibility: visible !important;
+    padding:15px;
+    visibility:hidden;
+}
+
+img.grayscale:hover ~ .hide, .hide:hover {
+	display:block !important;
+	    visibility:visible !important;
+
+}
+
+#lightgallery:hover ~ .hide, .hide:hover {
+	display:block !important;
+	    visibility:visible !important;
+
+}
+
+img.grayscale:focus ~ .hide{
+	display:block !important;
+	    visibility:visible !important;
+
+}
+
+img.grayscale:active ~ .hide{
+	display:block !important;
+	    visibility:visible !important;
+
+}
+
+.hide:hover + img.grid.grayscale.one, 
+.hide:active + img.grid.grayscale.one, 
+.hide:focus + img.grid.grayscale.one {
+	filter: none;
+    -webkit-filter: grayscale(0%) !important;
+    display:none;
+}
+
+img.grid.grayscale.one ~ .hide:hover, 
+img.grid.grayscale.one ~ .hide:active, 
+img.grid.grayscale.one ~ .hide:focus, 
+	filter: none;
+    -webkit-filter: grayscale(0%) !important;
+    display:none;
+}
+
+img.grid.grayscale.one .hide:hover, 
+img.grid.grayscale.one .hide:active, 
+img.grid.grayscale.one .hide:focus{
+	filter: none;
+    -webkit-filter: grayscale(0%) !important;
+    display:none;
+}
+
+
+.hide.displayon{
+	display:block !important;
+}
+
+.toggle, .toggle-one, .toggle-three, .toggle-four, .toggle-five, .toggle-six, .toggle-seven, .toggle-eight, .toggle-nine{
+display:none;	position: relative;
+}
+
+img.grayscale ~ .displayon  {
+	filter: none;
+    -webkit-filter: grayscale(0%) !important;
+}
+
+img.grayscale.color{
+	filter: none;
+    -webkit-filter: grayscale(0%) !important;
+}
+
+
+.row.toggle.slow{
+	display:block !important;
+}
+

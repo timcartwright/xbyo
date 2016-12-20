@@ -1,0 +1,22 @@
+
+@font-face {
+  font-family: 'AdihausDIN-Regular';
+  src: url('AdihausDIN-Regular.eot?#iefix') format('embedded-opentype'),  url('AdihausDIN-Regular.woff') format('woff'), url('AdihausDIN-Regular.ttf')  format('truetype'), url('AdihausDIN-Regular.svg#AdihausDIN-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'AdihausDIN-Cn';
+  src: url('AdihausDIN-Cn.eot?#iefix') format('embedded-opentype'),  url('AdihausDIN-Cn.woff') format('woff'), url('AdihausDIN-Cn.ttf')  format('truetype'), url('AdihausDIN-Cn.svg#AdihausDIN-Cn') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'adineuePRO-Bold';
+  src: url('adineuePRO-Bold.eot?#iefix') format('embedded-opentype'),  url('adineuePRO-Bold.otf')  format('opentype'),
+      url('adineuePRO-Bold.woff') format('woff'), url('adineuePRO-Bold.ttf')  format('truetype'), url('adineuePRO-Bold.svg#adineuePRO-Bold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}

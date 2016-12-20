@@ -1,0 +1,125 @@
+
+
+/* SMALL SCREEN NO RETINA*/
+
+@media only screen and (min-width: 990px) and (max-width: 1200px) {
+
+h2.journey{
+	padding-top:60px;
+}
+
+.hide, .demo-gallery-poster{
+	top:90px;
+}
+
+h3.shop{
+padding:50px 0px;
+}
+
+#lightgallerythree {
+	padding:0px 15px 15px;
+}
+
+.beginning2 {
+    margin-top: -89px;
+}
+
+.beginning2-content{
+	padding:37px 50px 0px 50px;
+
+}
+
+.beginning2-content p{
+padding-bottom:0px;
+	}
+
+.themaker p br{
+	display:none;
+}
+
+.col-sm-4.themaker{
+	padding:0px 15px
+}
+
+.themaker h2{
+	margin-top:3px;
+}
+
+.materialone {
+	padding:7.5px 15px;
+}
+
+.threed br{
+	display: none;
+	text-align: center;
+	padding:0px 50px;
+}
+
+h3.threed{
+	padding:57px 70px
+}
+
+h3.impossible{
+	padding:21px 30px
+}
+
+.col-bottom.garment .hide{
+top:300px;
+}
+
+img.big{display:none;}
+img.sm{display:block;}
+.makersecond {
+	padding:15px;
+}
+
+.makersecond p {
+margin-bottom:0px;
+padding-bottom:10px;
+}
+
+p {
+    padding-bottom: 40px;
+    font-family: 'AdihausDIN-Regular';
+    line-height: 21px;
+    font-size: 18px;
+}
+
+}
+
+@media only screen and (min-width: 290px) and (max-width: 980px) {
+
+	h2.journey {
+    padding-top: 15px !important;
+}
+
+}
+
+/** TABLET LANDSCAPE **/
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) { 
+
+
+
+}
+
+/* TABLET PORTRAIT **/
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+
+
+
+}
+
+/* MOBILE LANDSCAPE */
+
+@media only screen and (min-device-width : 275px) and (max-device-width : 667px) and (orientation : landscape) {
+
+}
+
+/* MOBILE PORTRAIT */
+
+@media only screen and (min-device-width : 375px) and (max-device-width : 667px) and (orientation : portrait) {
+
+
+}
