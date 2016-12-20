@@ -42,6 +42,7 @@ body, html {
 
 body{
 	padding-top:0px;
+    padding-bottom: 20px;
 }
 
 h2{
@@ -124,7 +125,7 @@ text-decoration: none;}
 
 /* GRID */
 
-.container{
+.container__border{
 	border:1px solid black;
 }
 
