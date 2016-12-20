@@ -26,145 +26,135 @@
         <nav class="navbar" role="navigation">
             <div class="row noborder">
                 <div class="col-sm-4">
-                    <img class="left" width="58px" src="img/adidas-logo.jpg    " />
-                </div>
-                <div    class="col-sm-4">
-                    <img width="167px" src="img/xbyo-logo.jpg    " />
+                    <img class="left" width="58px" src="img/adidas-logo.jpg" />
                 </div>
                 <div class="col-sm-4">
-                    <img class="right" width="205px" src="img/original-logo.jpg    " />
+                    <img width="167px" src="img/xbyo-logo.jpg" />
+                </div>
+                <div class="col-sm-4">
+                    <img class="right" width="205px" src="img/original-logo.jpg" />
                 </div>
             </div>
         </nav>
     </div>
 
     <div class="container container__border">
+
         <!-- ROW 1 -->
-        <div class="row">
+        <div class="row row-eq-height">
             <!-- Row 1 Item 1 -->
-            <div class="col-sm-4 gridright">
-                <div style="padding:15px 0px" id="lightgallery">
-                    <a style="padding:15px 0px" href="img/01.jpg">
-                        <img width="100%" class="grayscale" src="img/01.jpg" />
-                        <div class="demo-gallery-poster hide">
-                            <h3>VIEW GALLERY</h3>
-                            <br/><br/>
-                            <img width="50" src="img/arrow-down.png" />
-                        </div>
-                    </a>
-                    <a style="display:none"href="img/gallery/lookbook-08.jpg">
-                            <img src="img/gallery/lookbook-08.jpg" />
-                    </a>
-                    <a style="display:none"href="img/gallery/lookbook-09.jpg">
-                            <img src="img/gallery/lookbook-09.jpg" />
-                    </a>
-                    <a style="display:none"href="img/gallery/lookbook-10.jpg">
-                            <img src="img/gallery/lookbook-10.jpg" />
-                    </a>
-                    <a style="display:none"href="img/gallery/lookbook-11.jpg">
-                            <img src="img/gallery/lookbook-11.jpg" />
-                    </a>
-                    <a style="display:none"href="img/gallery/lookbook-12.jpg">
-                            <img src="img/gallery/lookbook-12.jpg" />
-                    </a>
-                    <a style="display:none"href="img/gallery/lookbook-13.jpg">
-                            <img src="img/gallery/lookbook-13.jpg" />
-                    </a>
-                        <a style="display:none"href="img/gallery/lookbook-14.jpg">
-                            <img src="img/gallery/lookbook-14.jpg" />
-                    </a>
-                    <a style="display:none"href="img/gallery/lookbook-15.jpg">
-                            <img src="img/gallery/lookbook-15.jpg" />
-                    </a>
-                </div>
-            </a>
-            <!-- CONTENT Row 1 Item 1 -->
-        </div>
-
-        <!-- Row 1 Item 2 -->
-        <div class="col-sm-4 ">
-            <h2 class="journey" >‘X’ <br/>
-                MARKS <br/>
-                THE JOURNEY </h2>
-        </div>
-
-        <!-- Row 1 Item 3 -->
-        <div class="col-sm-4 gridleft">
-            <a href="#three" id="toggle-three" data="three" class="toggleaction" >
-                <img width="100%" class="grid grayscale three" src="img/03.jpg    " />
-                <div class="hide">
-                    <h3>THE BEGINNINGS</h3><br/><br/>
-                    <img width="50" src="img/arrow-down.png" />
-                </div>
-            </a>
-        </div>
-    </div>
-<!--END ROW 1-->
-
-    <div class="row toggle-one" data-grid="one">
-        <div class="col-sm-12 ">
-            <div id="one" class="row noborder">
-                <div class="col-sm-4" style="padding:50px 50px">
-                    <h2> FIRST ITEM FIRST ROWffff </h2>
-                    <p>
-                        Inspired by adidas Originals’ archive as the first dedicatedapparel range, XBYO represents the brand’s authentic DNA. Discover a range designed to elevate everyday streetwear for a contemporary consumer who appreciates the concept of timeless premium basics.
+            <div class="col-sm-8">
+                <figure>
+                    <video width="100%" height="auto" controls poster="img/poster.jpg" onclick="this.play();">
+                        <source src="video/video.mp4" type="video/mp4">
+                        <source src="video/video.ogv" type="video/ogg">
+                        Your browser does not support the video tag.
+                    </video>
+                    <figcaption class="video__caption">The documentary</figcaption>
+                </figure>
+            </div>
+            <!-- Row 1 Item 2 -->
+            <div class="col-sm-4 gridleft">
+                <div class="journey">
+                    <h3 class="journey__heading">
+                        ‘X’ marks the journey
+                    </h3>
+                    <hr class="journey__divider" />
+                    <p class="journey__text">
+                        It began with the ‘X’ and it certainly will not end there. This is the story of XBYO.
                     </p>
                 </div>
-                <div class="col-sm-8">
-                    <a href="#" id="toggle-close-one" class="toggleaction" >
-                        <img width="25" class="right" style="margin:20px" src="img/close.png    " />
-                    </a>
-                    <img width="100%" style="padding:0px 50px"    src="img/history.jpg    " />
+            </div>
+        </div>
+        <!--END ROW 1-->
+
+        <div class="row toggle-one" data-grid="one">
+            <div class="col-sm-12 ">
+                <div id="one" class="row noborder">
+                    <div class="col-sm-4" class="padding-50-50">
+                        <h3> FIRST ITEM FIRST ROWffff </h3>
+                        <p>
+                            Inspired by adidas Originals’ archive as the first dedicatedapparel range, XBYO represents the brand’s authentic DNA. Discover a range designed to elevate everyday streetwear for a contemporary consumer who appreciates the concept of timeless premium basics.
+                        </p>
+                    </div>
+                    <div class="col-sm-8">
+                        <a href="#" id="toggle-close-one" class="toggleaction" >
+                            <img width="25" class="right" style="margin:20px" src="img/close.png" />
+                        </a>
+                        <img width="100%" style="padding:0px 50px"    src="img/history.jpg" />
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <!-- CONTENT Row 1 Item 3 -->
-    <div class="row toggle-three">
-        <div class="col-sm-12 ">
-            <div id="three" class="row noborder">
-                <div class="col-sm-6" style="text-align:left;padding:50px 15px 30px 15px;border-bottom:1px solid black;border-right:1px solid black">
-                    <h2 style="text-align:left">THE BEGINNING</h2>
+        
+
+        <!-- Start of row 2 -->
+        <div class="row row-eq-height">
+            <!-- Row 2 Item 1 -->
+            <div class="col-sm-4 gridright">
+                <a href="#three" id="toggle-three" data="three" class="toggleaction" >
+                    <img width="100%" class="grid grayscale three" src="img/03.jpg  "></img>
+                    <div class="hide">
+                        <h3>The beginning</h3>
+                        <br/><br/>
+                        <img width="50" src="img/arrow-down.png" />
+                    </div>
+                </a>
+            </div>
+
+            <!-- Row 2 Item 2 -->
+            <div class="col-sm-4 card">
+                <figure>
+                    <img class="img-responsive card__image grayscale" src="img/simplicity.jpg" alt="Simplicity" />
+                </figure>
+                <h3 class="card__title">Simplicity</h3>
+                <p class="card__text">No big prints and very subtle branding.</p>
+            </div>
+            
+            <!-- Row 2 Item 3 -->
+            <div class="col-sm-4 gridleft">
+                <a href="#four" id="toggle-four" data="four" class="toggleaction" >
+                    <img width="100%" class="grid grayscale four" src="img/04.jpg  " />
+                    <div class="hide">
+                        <h3>The maker</h3>
+                        <br/><br/>
+                        <img width="50" src="img/arrow-down.png" />
+                    </div>
+                </a>
+            </div>
+        </div>
+        <!-- End of row 2 -->
+
+        <!-- CONTENT Row 1 Item 3 -->
+        <div class="toggle-three">
+            <div id="three" class="row row-eq-height vertical-center">
+                <div class="col-sm-8">
+                    <h3>The beginning</h3>
                     <p>
-                        In most cases, a letter ‘X’ never goes beyond signifying the end of something, the destination. But in others, ‘X’ marks the journey itself. <br/><br/>
-                        
-                        The adidas Italia began as a running shoe. It was introduced in 1959, and would later become the most popular shoe at the 1960 Olympics in Rome. It was known for its signature jagged green tensile tape that wrapped around the side of the shoe and crisscrossed over the heel.    <br/><br/>
-
-                        This was the beginning of the ‘X.’ <br/><br/>
+                        In most cases, a letter ‘X’ never goes beyond signifying the end of something, the destination. But in others, ‘X’ marks the journey itself.
+                    </p>
+                    <p>
+                        The adidas Italia began as a running shoe. It was introduced in 1959, and would later become the most popular shoe at the 1960 Olympics in Rome. It was known for its signature jagged green tensile tape that wrapped around the side of the shoe and crisscrossed over the heel.
+                    </p>
+                    <p>This was the beginning of the ‘X.’</p>
                 </div>
 
-                <div class="col-sm-6" style="padding:15px;border-bottom:1px solid black;margin-top:0px;">
-                    <img width="100%" src="img/history.jpg    " />
-                </div>
-                <!-- 
-                        <a href="#" id="toggle-close-three" class="toggleaction" >
-                            <img width="25" class="right" style="margin:20px" src="img/close.png    " />
-                        </a>
-                -->
-                <div class="col-sm-6" style="padding:15px;border-bottom:1px solid black;margin-top:0px">
-                <!-- 
-                        <a href="#" id="toggle-close-three" class="toggleaction" >
-                            <img width="25" class="right" style="margin:20px" src="img/close.png    " />
-                        </a>
-                -->
-                    <h3 style="line-height:55px;color:black;background:#c0bfbf;padding:40px 0px;margin-top:0px">“WITH XBYO WHAT WE REALLY <br/>
-                        WANTED TO DO WAS TO CELEBRATE <br/>OUR PAST BUT WE WANTED<br/> TO PUT IT IN A NEW CONTEXT”<br/>
-                        <span style="text-transform:capitalize">Mr Nic Galway</span>
-                    </h3>
+                <div class="col-sm-4 gridleft our-past">
+                    <img class="img-responsive our-past__image" src="img/history.jpg" />
+                    <p class="our-past__text">
+                        “With XBYO what we really wanted to do was to celebrate our past but we wanted to put it in a new context”
+                        <br/>
+                        <em>Mr Nic Galway</em>
+                    </p>
                 </div>
             </div>
 
-            <div id="three" class="row noborder">
-                <div class="col-sm-6 beginning2" style="padding:15px;border-bottom:0px solid black;border-right:1px solid black;">
-                <!-- 
-                    <a href="#" id="toggle-close-three" class="toggleaction" >
-                        <img width="25" class="right" style="margin:20px" src="img/close.png  " />
-                    </a>
-                -->
-                    <img width="100%" src="img/beginning-02.jpg  " />
+            <div id="three2" class="row row-eq-height vertical-center">
+                <div class="col-sm-4 gridright">
+                    <img class="img-responsive" src="img/beginning-02.jpg" />
                 </div>
-                <div class="col-sm-6 beginning2-content" style="text-align:left;border-bottom:0px solid black">
+                <div class="col-sm-8 beginning2-content">
                     <p>
                         For its debut collection, adidas Originals XBYO draws upon decades of experience to produce a series of premium apparel pieces that goes back to the basics. A trifecta of collaborative mastery relizes this vision: design put forth by adidas Originals, fabric knitted by Yamayo Textile and patterns cut by Satomi Nakamura. <br/><br/>
                         Thus the iconic 'X,' adorning each piece produced by this connection, has evolved to represent the cross section of seemingly disparate elements, uniting East and West, sport and everyday life, form and function. <br/><br/>
@@ -173,399 +163,253 @@
                 </div>
             </div>
         </div>
-    </div>
 
-    <!-- ROW 2 -->
-
-    <div class="row">
-        <!-- Row 2 Item 1 -->
-        <div class="col-sm-4 gridright">
-            <a href="#four" id="toggle-four" data="four" class="toggleaction" >
-                <img width="100%" class="grid grayscale four" src="img/04.jpg  " />
-                <div class="hide">
-                    <h3>THE MAKER</h3>
-                    <br/><br/>
-                    <img width="50" src="img/arrow-down.png" />
+        <!-- CONTENT Row 2 Item 1-->
+        <div class="toggle-four">
+            <div id="four" class="row row-eq-height vertical-center">
+                <div class="col-sm-8 themaker">
+                    <h3>The maker</h3>
+                    <p>Cuts for the collection were devised by renowned pattern maker Satomi Nakamura, bringing a sharpened and refined cut to classic sportswear designs.</p>
+                    <p>Nakamura humbly considers her role as being a “realizer of dreams,” listening attentively to the needs of the client. She adamantly resists fleeting external influences and applies intuition and 30 years of experience as a patternmaker to solve them.</p>
                 </div>
-            </a>
-        </div>
-
-        <!-- Row 2 Item 2 -->
-        <div class="col-sm-4 ">
-            <a href="#five" id="toggle-five" data="five" class="toggleaction" >
-                <img width="100%" class="gridcenter grayscale five" src="img/05.jpg  " />
-                <div class="hide">
-                    <h3>WATCH DOCUMENTARY</h3>
-                    <br/><br/>
-                    <img width="50" src="img/arrow-down.png" />
+                <div class="col-sm-4 gridleft">
+                    <img class="img-responsive" src="img/the-maker-03.jpg" />
+                    <p class="threed" style="background:#c0bfbf;">
+                        “I wanted to introduce the idea of a 3D look, a 3D approach to clothing.”
+                        <em>Mrs Satomi Nakamura</em>
+                    </p>
                 </div>
-            </a>
-        </div>
-        
-        <!-- Row 2 Item 3 -->
-        <div class="col-sm-4 gridleft">
-            <div style="padding:15px 0px" id="lightgallerytwo">
-                <a style="padding:15px 0px" href="img/06.jpg">
-                <img width="100%" class="grayscale" src="img/06.jpg" />
-                <div class="demo-gallery-poster hide">
-                    <h3>VIEW GALLERY</h3>
-                    <br/><br/>
-                    <img width="50" src="img/arrow-down.png">
+            </div>
+            <div id="four2" class="row row-eq-height vertical-center">
+                <div class="col-sm-4 gridright">
+                    <img class="img-responsive" src="img/the-maker-01.jpg" />
+                    <img class="img-responsive" src="img/the-maker-02.jpg" />
+                    
                 </div>
-                </a>
-                <a style="display:none"href="img/gallery/the-maker-01.jpg">
-                    <img src="img/gallery/the-maker-01.jpg" />
-                </a>
-                <a style="display:none" href="img/gallery/the-maker-02.jpg">
-                    <img src="img/gallery/the-maker-02.jpg" />
-                </a>
-                <a style="display:none"href="img/gallery/the-maker-03.jpg">
-                    <img src="img/gallery/the-maker-03.jpg" />
-                </a>
-                <a style="display:none"href="img/gallery/the-maker-04.jpg">
-                    <img src="img/gallery/the-maker-04.jpg" />
-                </a>
-                <a style="display:none" href="img/gallery/the-maker-05.jpg">
-                    <img src="img/gallery/the-maker-05.jpg" />
-                </a>
-                <a style="display:none"href="img/gallery/the-maker-06.jpg">
-                    <img src="img/gallery/the-maker-06.jpg" />
-                </a>
-                <a style="display:none" href="img/gallery/the-maker-07.jpg">
-                    <img src="img/gallery/the-maker-07.jpg" />
-                </a>
-                <a style="display:none"href="img/gallery/the-maker-08.jpg">
-                    <img src="img/gallery/the-maker-08.jpg" />
-                </a>
-                <a style="display:none"href="img/gallery/the-maker-09.jpg">
-                    <img src="img/gallery/the-maker-09.jpg" />
-                </a>
-                <a style="display:none" href="img/gallery/the-maker-10.jpg">
-                    <img src="img/gallery/the-maker-10.jpg" />
-                </a>
-                <a style="display:none"href="img/gallery/the-maker-11.jpg">
-                    <img src="img/gallery/the-maker-11.jpg" />
-                </a>
-                <a style="display:none" href="img/gallery/the-maker-12.jpg">
-                    <img src="img/gallery/the-maker-12.jpg" />
-                </a>
-            </div>
-        </a>
-    </div>
-
-    <!-- CONTENT Row 1 Item 1 -->
-</div>
-
-<!-- CONTENT Row 2 Item 1-->
-<div class="row toggle-four">
-    <div class="col-sm-12 ">
-        <div id="four" class="row noborder">
-            <div class="col-sm-4 themaker" style="text-align:left;border-bottom:1px solid black">
-                <h2 style="text-align:left">THE MAKER</h2>
-                <p>
-                    Cuts for the collection were devised<br/> by renowned pattern maker Satomi Nakamura, bringing a sharpened and refined cut to classic sportswear designs. 
-                    Nakamura humbly considers <br/>her role as being a “realizer of <br/>dreams,” listening attentively to the <br/>needs of the client. She adamantly <br/>resists fleeting external influences <br/>and applies intuition and 30 years of <br/>experience as a patternmaker <br/>to solve them.
-                </p>
-            </div>
-            <div class="col-sm-8" style="padding:0px">
-             <!--     <a href="#" id="toggle-close-four" class="toggleaction" >
-                <img width="25" class="right" style="margin:20px" src="img/close.png  " />
-            </a> -->
-                <img width="100%" style="padding:15px 15px 15px 15px;border-left:1px solid black;border-bottom:1px solid black"  src="img/the-maker-01.jpg  " />
-            </div>
-        </div>
-        <div id="four" class="row noborder" style="border-bottom:1px solid black">
-            <div class="col-sm-6">
-                <img width="100%" style="padding:15px 0px 15px 0px;border-left:0px solid black;border-bottom:0px solid black"  src="img/the-maker-02.jpg  " />
-            </div>
-            <div class="col-sm-6" style="padding:15px 0px 0px 0px; border-left:1px solid black">
-                <h3 class="threed" style="font-size:22px;line-height:45px;color:black;background:#c0bfbf;margin:0px 15px 15px 15px">
-                    “I wanted to introduce the idea of <br/>
-                    a 3D look, a 3D approach to clothing.”<br/>
-                    <span style="text-transform:capitalize">Mrs Satomi Nakamura</span>
-                </h3>
-            </div>
-        </div>
-        <div id="four" class="row noborder" style="border-bottom:0px solid black;margin:0px">
-            <div class="col-sm-5 makersecond">
-                <p style="text-align:left">
-                Ms. Nakamura took several trips to the adidas headquarters in Herzogenaurach to collaborate with the team and help define XBYO’s initial collection. The goal was to create a pleasing and flattering silhouette that still enjoyed a generous range of motion. <br/><br/> 
-                Understated details such as the preference of darts over the seams result in an instantly-recognizable but no less minimalist reinterpretation of classic silhouettes. Intricate cutting likewise means fewer separate pieces and fewer seams against the skin. 
-                </p>
-            </div>
-            <div class="col-sm-7">
-                <img width="100%" style=";border-left:1px solid black;border-bottom:0px solid black;padding:15px 0px 15px 15px"  src="img/the-maker-03.jpg  " />
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- CONTENT Row 2 Item 2-->
-<div class="row toggle-five">
-    <div class="col-sm-12 ">
-        <div id="five" class="row noborder">
-        <div class="col-sm-12" style="padding:15px">
-            <video width="100%" height="auto" controls poster="img/poster.jpg" onclick="this.play();">
-            <source src="video/video.mp4" type="video/mp4">
-            <source src="video/video.ogv" type="video/ogg">
-            Your browser does not support the video tag.
-            </video>
-        </div>
-        </div>
-    </div>
-</div>
-
-<!-- CONTENT Row 2 Item 3-->
-<div class="row toggle-six">
-    <div class="col-sm-12 ">
-        <div id="six"  class="row noborder">
-            <div class="col-sm-4" style="padding:50px 50px">
-                <h2> HISTORY OF THE X 3</h2>
-                <p>
-                Inspired by adidas Originals’ archive as the first dedicatedapparel range, XBYO represents the brand’s authentic DNA. Discover a range designed to elevate everyday streetwear for a contemporary consumer who appreciates the concept of timeless premium basics.
-                </p>
-            </div>
-            <div class="col-sm-8">
-                <a href="#" id="toggle-close-six" class="toggleaction" >
-                <img width="25" class="right" style="margin:20px" src="img/close.png  " />
-                </a>
-                <img width="100%" style="padding:0px 50px"  src="img/history.jpg  " />
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- ROW 3 -->
-<div class="row noborderbottom">
-
-    <!-- Item 1 Row 3 -->
-    <div class="col-sm-4 gridright mixlong">
-        <div class="col-top">
-            <a target="_blank" href="http://www.size.co.uk"  data="seven" class="toggleaction" >
-                <img width="100%" class="grid grayscale seven" src="img/07.jpg  " />
-                <div class="hide">
-                    <h3>SHOP THE<br/>COLLECTION</h3>
-                    <br/><br/>
-                    <img width="50" src="img/arrow-down.png" />
+                <div class="col-sm-8">
+                    <p>Ms. Nakamura took several trips to the adidas headquarters in Herzogenaurach to collaborate with the team and help define XBYO’s initial collection. The goal was to create a pleasing and flattering silhouette that still enjoyed a generous range of motion.</p>
+                    <p>Understated details such as the preference of darts over the seams result in an instantly-recognizable but no less minimalist reinterpretation of classic silhouettes. Intricate cutting likewise means fewer separate pieces and fewer seams against the skin.</p>
                 </div>
-            </a>
-        <div class="row toggle-seven">
+            </div>
+        </div>
+
+        <!-- CONTENT Row 2 Item 2-->
+        <div class="row toggle-five">
             <div class="col-sm-12 ">
-                <div id="seven" class="row noborder" style="border-top:1px solid black !important">
-                    <div class="col-sm-12" style="padding:50px 50px">
-                        <h2> HISTORY OF THE X 1</h2>
+                <div id="five" class="row noborder">
+                <div class="col-sm-12" style="padding:15px">
+                    <video width="100%" height="auto" controls poster="img/poster.jpg" onclick="this.play();">
+                    <source src="video/video.mp4" type="video/mp4">
+                    <source src="video/video.ogv" type="video/ogg">
+                    Your browser does not support the video tag.
+                    </video>
+                </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- CONTENT Row 2 Item 3-->
+        <div class="row toggle-six">
+            <div class="col-sm-12 ">
+                <div id="six"  class="row noborder">
+                    <div class="col-sm-4" class="padding-50-50">
+                        <h3> HISTORY OF THE X 3</h3>
                         <p>
                         Inspired by adidas Originals’ archive as the first dedicatedapparel range, XBYO represents the brand’s authentic DNA. Discover a range designed to elevate everyday streetwear for a contemporary consumer who appreciates the concept of timeless premium basics.
                         </p>
                     </div>
                     <div class="col-sm-8">
-                        <a href="#" id="toggle-close-seven" class="toggleaction" >
+                        <a href="#" id="toggle-close-six" class="toggleaction" >
                         <img width="25" class="right" style="margin:20px" src="img/close.png  " />
                         </a>
+                        <img width="100%" style="padding:0px 50px"  src="img/history.jpg  " />
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="col-bottom">
-        <a style="color:black !important" target="_blank" href="http://www.size.co.uk">
-            <div class="row noborderbottom">
-                <h3 class="shop" style="background-color:#282829;color:white;margin:0px 15px 15px 15px;">
-                SHOP THE XBYO
-                <br/>
-                COLLECTION
-                </h3>                            
+
+        <!-- ROW 3 -->
+        <div class="row row-eq-height">
+            <div class="col-sm-4 card gridright">
+                <figure>
+                    <img class="img-responsive card__image grayscale" src="img/tailored-fit.jpg" alt="Tailored Fit" />
+                </figure>
+                <h3 class="card__title">Tailored fit</h3>
+                <p class="card__text">Special ergonomic fit, letting the garments adjust to movement and body shape.</p>
+            </div>
+
+            <div class="col-sm-4">
+                <a href="#eight" id="toggle-eight" data="four" class="toggleaction" >
+                    <img width="100%" class="gridcenter grayscale eight big" src="img/8.jpg" />
+                    <img width="100%" class="gridcenter grayscale eight sm" src="img/8-sm.jpg" />
+                    <div class="hide">
+                        <h3>The material</h3>
+                            <br/><br/>
+                        <img width="50" src="img/arrow-down.png" />
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-sm-4 card gridleft">
+                <figure>
+                    <img class="img-responsive card__image grayscale" src="img/quality.jpg" alt="Quality" />
+                </figure>
+                <h3 class="card__title">Quality</h3>
+                <p class="card__text">Expert craftsmanship and high-quality material choice.</p>
             </div>
         </div>
-        </a>
-    </div>
-    
-<div class="col-sm-4 mix noborderbottom">
-    <div class="garment" style="border-bottom:1px solid black">
-        <div id="lightgallerythree">
-            <a style="padding:15px 0px" href="img/7-5.jpg">
-                <img width="100%" class="grayscale" src="img/7-5.jpg" />
-                <div class="demo-gallery-poster hide" style="top:20px">
-                    <h3>VIEW GALLERY</h3>
-                    <br/><br/>
-                    <img width="50" src="img/arrow-down.png">
-                </div>
-            </a>
-            <a style="display:none"href="img/gallery/the-material-01.jpg">
-                <img src="img/gallery/the-material-01.jpg" />
-            </a>
-            <a style="display:none" href="img/gallery/the-material-02.jpg">
-                <img src="img/gallery/the-material-02.jpg" />
-            </a>
-            <a style="display:none"href="img/gallery/the-material-03.jpg">
-                <img src="img/gallery/the-material-03.jpg" />
-            </a>
-            <a style="display:none"href="img/gallery/the-material-04.jpg">
-                <img src="img/gallery/the-material-04.jpg" />
-            </a>
-            <a style="display:none" href="img/gallery/the-material-05.jpg">
-                <img src="img/gallery/the-material-05.jpg" />
-            </a>
-            <a style="display:none"href="img/gallery/the-material-06.jpg">
-                <img src="img/gallery/the-material-06.jpg" />
-            </a>
-            <a style="display:none" href="img/gallery/the-material-07.jpg">
-                <img src="img/gallery/the-material-07.jpg" />
-            </a>
-            <a style="display:none"href="img/gallery/the-material-08.jpg">
-                <img src="img/gallery/the-material-08.jpg" />
-            </a>
-            <a style="display:none"href="img/gallery/the-material-09.jpg">
-                <img src="img/gallery/the-material-09.jpg" />
-            </a>
-            <a style="display:none"href="img/gallery/the-material-11.jpg">
-                <img src="img/gallery/the-material-11.jpg" />
-            </a>
-            <a style="display:none" href="img/gallery/the-material-12.jpg">
-                <img src="img/gallery/the-material-12.jpg" />
-            </a>
-            <a style="display:none"href="img/gallery/the-material-13.jpg">
-                <img src="img/gallery/the-material-13.jpg" />
-            </a>
-            <a style="display:none" href="img/gallery/the-material-14.jpg">
-                <img src="img/gallery/the-material-14.jpg" />
-            </a>
-            <a style="display:none"href="img/gallery/the-material-15.jpg">
-                <img src="img/gallery/the-material-15.jpg" />
-            </a>
-        </div>
-    </a>
-</div>
-
-<!-- CONTENT Row 1 Item 1 -->
-
-<div class="col-bottom garment">
-    <a href="#eight" id="toggle-eight" data="four" class="toggleaction" >
-        <img width="100%" class="gridcenter garment grayscale eight big" src="img/8.jpg  " />
-        <img width="100%" class="gridcenter garment grayscale eight sm" src="img/8-sm.jpg  " />
-        <div class="hide">
-            <h3>THE MATERIAL</h3>
-                <br/><br/>
-            <img width="50" src="img/arrow-down.png" />
-        </div>
-    </div>
-    </a>
-</div>
-<div class="col-sm-4 gridleft mixlong">
-    <div class="col-top">
-        <!-- <div id="lightgallery">
-        <a href="img/09.jpg">
-            <img src="img/09.jpg" />
-        </a>
-
-        </div> -->
-
-        <div style="padding:15px 0px" id="lightgallerylook">
-            <a style="padding:15px 0px" href="img/09.jpg">
-                <img width="100%" class="grayscale" src="img/09.jpg" />
-                <div class="demo-gallery-poster hide" style="top:200px">
-                    <h3>VIEW LOOKBOOK</h3>
-                    <br/><br/>
-                    <img width="50" src="img/arrow-down.png" />
-                </div>
-            </a>
-            <a style="display:none"href="img/gallery/lookbook-01.jpg">
-                <img src="img/gallery/lookbook-01.jpg" />
-            </a>
-            <a style="display:none"href="img/gallery/lookbook-02.jpg">
-                <img src="img/gallery/lookbook-02.jpg" />
-            </a>
-            <a style="display:none"href="img/gallery/lookbook-03.jpg">
-                <img src="img/gallery/lookbook-03.jpg" />
-            </a>
-            <a style="display:none"href="img/gallery/lookbook-04.jpg">
-                <img src="img/gallery/lookbook-04.jpg" />
-            </a>
-            <a style="display:none"href="img/gallery/lookbook-05.jpg">
-                <img src="img/gallery/lookbook-05.jpg" />
-            </a>
-            <a style="display:none"href="img/gallery/lookbook-06.jpg">
-                <img src="img/gallery/lookbook-06.jpg" />
-            </a>
-            <a style="display:none"href="img/gallery/lookbook-07.jpg">
-                <img src="img/gallery/lookbook-07.jpg" />
-            </a>
-        </div>
-        <!--   <div class="hide">
-        <a style="padding:15px 0px" href="img/09.jpg">
-
-        <h3>VIEW LOOKBOOK</h3><br/><br/>
-            <img src="img/arrow-down.jpg" />
-        </a>
-        </div>  -->
-    </div>
-</div>
-</div>
 
 
-<!-- CONTENT Row 3 Item 1-->
-    <!-- CONTENT Row 3 Item 2-->
-    <div class="row toggle-eight" style="border-bottom:0px solid black">
-        <div class="col-sm-12 ">
-            <div id="eight" class="row noborder" style="border-top:1px solid black">
-                <div class="col-sm-5 materialone" style="border-left:0px solid black;text-align:left;border-bottom:1px solid black">
-                    <h2 class="material" style="text-align:left">THE MATERIAL</h2>
+        <!-- CONTENT Row 3 Item 1-->
+        <div class="toggle-eight">
+            <div id="eight" class="row row-eq-height">
+                <div class="col-sm-8 materialone">
+                    <h3 class="material">The material</h3>
                     <p>Not long after the debut of the Italia running shoe at the Rome Olympics in 1960, sportswear began to incorporate synthetic fibers such as nylon and polyester, and mills that had first worked with cotton such as Yamayo were ready for such innovation. From there, the relationship between Yamayo and adidas would only deepen. As adidas grew, so did Yamayo; such that Yamashita-san would present his newest developments to adidas.   </p>
                 </div>
-                <div class="col-sm-7" style="padding:0px">
-                    <!--     <a href="#" id="toggle-close-four" class="toggleaction" >
-                            <img width="25" class="right" style="margin:20px" src="img/close.png  " />
-                            </a>
-                    -->
-                    <img width="100%" style="padding:15px 15px 15px 15px;border-right:0px solid black;border-left:1px solid black;border-bottom:1px solid black"  src="img/the-material-01.jpg  " />
+                <div class="col-sm-4 gridleft">
+                    <img width="100%" src="img/the-material-03.jpg" />
+                    <p class="impossible">
+                        “We constantly challenge ourselves <br/>
+                        to make the impossible possible.”<br/>
+                        <em style="text-transform:capitalize">Mr Ikuo Yamashita</em>
+                    </p>
                 </div>
             </div>
-            <div id="eight" class="row noborder" style="border-bottom:1px solid black">
-                <div class="col-sm-8" style="padding-left:0px">
-                    <img class="big" width="100%" style="padding:15px 0px 15px 15px;border-left:0px solid black;border-bottom:0px solid black"  src="img/the-material-02.jpg  " />
-                    <img class="sm" width="100%" style="padding:15px 0px 15px 15px;border-left:0px solid black;border-bottom:0px solid black"  src="img/material-sm.jpg  " />
+            <div id="eight" class="row row-eq-height">
+                <div class="col-sm-4 gridright">
+                    <img width="100%" style="padding:15px 0px 15px 15px;border-left:0px solid black;border-bottom:0px solid black"  src="img/material-sm.jpg  " />
                 </div>
-            <div class="col-sm-4" style="text-align:left;padding:35px 0px 30px 15px; border-left:1px solid black">
-                <strong>TAILORED FIT</strong><br/><br/>
-                <p style="padding-bottom:0px">Special ergonomic fit, letting the garments adjust to movement and body shape.</p><br/>
-                <strong>DART CONSTRUCTION</strong><br/><br/>
-                <p style="padding-bottom:0px">Use of darts instead of seams to develop a truly unique garment shape.</p><br/>
-                <strong>SIMPLICITY</strong><br/><br/>
-                <p style="padding-bottom:0px">No big prints and very subtle branding.</p><br/>
-                <strong>QUALITY</strong><br/><br/>
-                <p style="padding-bottom:0px">Expert craftsmanship and high-quality material choice.</p>
+                <div class="col-sm-8">
+                    <img width="100%" src="img/the-material-01.jpg" />
+                </div>
             </div>
         </div>
-    <div id="eight" class="row noborder" style="border-bottom:0px solid black">
-        <div class="col-sm-8" style="padding-left:0px;padding-right:0px">
-            <h3 class="impossible" style="font-size:22px;line-height:45px;color:black;background:#c0bfbf;margin:15px 15px 15px 15px">
-            “We constantly challenge ourselves <br/>
-            to make the impossible possible.”<br/>
-            <span style="text-transform:capitalize">Mr Ikuo Yamashita</span></h3>
+
+        <!-- Start of row 4 -->
+        <div class="row row-eq-height">
+            <!-- Row 4 Item 1 -->
+            <div class="col-sm-4 gridright">
+                <div>
+                    <!-- <div id="lightgallery">
+                    <a href="img/09.jpg">
+                        <img src="img/09.jpg" />
+                    </a>
+
+                    </div> -->
+
+                    <div id="lightgallerylook">
+                        <a href="img/09.jpg">
+                            <img width="100%" class="grayscale" src="img/lookbook.jpg" />
+                            <div class="demo-gallery-poster hide" style="top:200px">
+                                <h3>The lookbook</h3>
+                                <br/><br/>
+                                <img width="50" src="img/arrow-down.png" />
+                            </div>
+                        </a>
+                        <a style="display:none" href="img/gallery/lookbook-01.jpg">
+                            <img src="img/gallery/lookbook-01.jpg" />
+                        </a>
+                        <a style="display:none" href="img/gallery/lookbook-02.jpg">
+                            <img src="img/gallery/lookbook-02.jpg" />
+                        </a>
+                        <a style="display:none" href="img/gallery/lookbook-03.jpg">
+                            <img src="img/gallery/lookbook-03.jpg" />
+                        </a>
+                        <a style="display:none" href="img/gallery/lookbook-04.jpg">
+                            <img src="img/gallery/lookbook-04.jpg" />
+                        </a>
+                        <a style="display:none" href="img/gallery/lookbook-05.jpg">
+                            <img src="img/gallery/lookbook-05.jpg" />
+                        </a>
+                        <a style="display:none" href="img/gallery/lookbook-06.jpg">
+                            <img src="img/gallery/lookbook-06.jpg" />
+                        </a>
+                        <a style="display:none" href="img/gallery/lookbook-07.jpg">
+                            <img src="img/gallery/lookbook-07.jpg" />
+                        </a>
+                    </div>
+                    <!--   <div class="hide">
+                    <a href="img/09.jpg">
+
+                    <h3>VIEW LOOKBOOK</h3><br/><br/>
+                        <img src="img/arrow-down.jpg" />
+                    </a>
+                    </div>  -->
+                </div>
+            </div>
+
+            <!-- Row 4 Item 2 -->
+            <div class="col-sm-4 card">
+                <figure>
+                    <img class="img-responsive card__image grayscale" src="img/construction.jpg" alt="Dart construction" />
+                </figure>
+                <h3 class="card__title">Dart construction</h3>
+                <p class="card__text">Use of darts instead of seams to develop a truly unique garment shape.</p>
+            </div>
+            
+            <!-- Row 4 Item 3 -->
+            <div class="col-sm-4 gridleft">
+                <a href="#four" id="toggle-four" data="four" class="toggleaction" >
+                    <img width="100%" class="grid grayscale four" src="img/the-making-of.jpg" />
+                    <div class="hide">
+                        <h3>The making of</h3>
+                        <br/><br/>
+                        <img width="50" src="img/arrow-down.png" />
+                    </div>
+                </a>
+            </div>
         </div>
-        <div class="col-sm-4" style="text-align:left;padding: 15px; border-left:1px solid black">
-            <img width="100%" style=""  src="img/the-material-03.jpg  " />
+        <!-- End of row 4 -->
+
+        <!-- Start of row 5 -->
+        <div class="row row-eq-height">
+            <!-- Row 5 Item 1 -->
+            <div class="col-sm-8">
+                <figure>
+                    <video width="100%" height="auto" controls poster="img/poster.jpg" onclick="this.play();">
+                        <source src="video/video.mp4" type="video/mp4">
+                        <source src="video/video.ogv" type="video/ogg">
+                        Your browser does not support the video tag.
+                    </video>
+                    <figcaption class="video__caption">The animation</figcaption>
+                </figure>
+            </div>
+            <!-- Row 5 Item 2 -->
+            <div class="col-sm-4 gridleft">
+                <a target="_blank" href="http://www.size.co.uk">
+                    <div class="shop">
+                        <h3 class="shop__heading">
+                            Shop the XBYO collection
+                        </h3>
+                        <p>Click here</p>
+                    </div>
+                </a>
+                <div>
+                    <img class="img-responsive grayscale" src="img/filler.jpg" alt="Image">
+                </div>
+            </div>
         </div>
+        <!-- End of row 5-->
+
     </div>
-</div>
-</div>
 </div>
 
 <!-- CONTENT Row 3 Item 3-->
 <div class="row toggle-nine">
     <div class="col-sm-12 ">
         <div id="nine" class="row noborder" style="border-top:1px solid black !important">
-        <div class="col-sm-4" style="padding:50px 50px">
-            <h2> HISTORY OF THE X 3</h2>
+        <div class="col-sm-4" class="padding-50-50">
+            <h3> HISTORY OF THE X 3</h3>
             <p>
             Inspired by adidas Originals’ archive as the first dedicatedapparel range, XBYO represents the brand’s authentic DNA. Discover a range designed to elevate everyday streetwear for a contemporary consumer who appreciates the concept of timeless premium basics.
             </p>
         </div>
         <div class="col-sm-8">
             <a href="#" id="toggle-close-nine" class="toggleaction" >
-                <img width="25" class="right" style="margin:20px" src="img/close.png  " />
+                <img width="25" class="right" style="margin:20px" src="img/close.png" />
             </a>
-            <img width="100%" style="padding:0px 50px"  src="img/history.jpg  " />
+            <img width="100%" style="padding:0px 50px"  src="img/history.jpg" />
         </div>
     </div>
 </div>
