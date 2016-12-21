@@ -12,13 +12,14 @@
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/bootstrap-theme.min.css">
-    <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="css/lightbox.css">
     <link rel="stylesheet" href="css/lightgallery.css">
+    <link rel="stylesheet" href="css/main.css">
     <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
 </head>
 <body>
+    <div class="overlay"></div>
     <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
@@ -106,24 +107,31 @@
         <!-- CONTENT: The beginning -->
         <div class="toggle-three">
             <div id="three" class="row row-eq-height vertical-center">
-                <div class="col-sm-8">
+                <div class="col-sm-8 thebeginning">
                     <h3>The beginning</h3>
-                    <p>
+                    <p class="thebeginning__text">
                         In most cases, a letter ‘X’ never goes beyond signifying the end of something, the destination. But in others, ‘X’ marks the journey itself.
                     </p>
-                    <p>
+                    <p class="thebeginning__text">
                         The adidas Italia began as a running shoe. It was introduced in 1959, and would later become the most popular shoe at the 1960 Olympics in Rome. It was known for its signature jagged green tensile tape that wrapped around the side of the shoe and crisscrossed over the heel.
                     </p>
-                    <p>This was the beginning of the ‘X.’</p>
+                    <p class="thebeginning__text">This was the beginning of the ‘X.’</p>
                 </div>
 
                 <div class="col-sm-4 gridleft our-past">
-                    <img class="img-responsive our-past__image" src="img/history.jpg" />
-                    <p class="our-past__text">
-                        “With XBYO what we really wanted to do was to celebrate our past but we wanted to put it in a new context”
-                        <br/>
-                        <em>Mr Nic Galway</em>
-                    </p>
+                    <div class="col-top">
+                        <img class="img-responsive our-past__image" src="img/history.jpg" />
+                    </div>
+                    <div class="col-bottom">
+                        <div class="our-past__text">
+                            <p>
+                                “With XBYO what we really wanted to do was to celebrate our past but we wanted to put it in a new context”
+                            </p>
+                            <p>
+                                <em>Mr Nic Galway</em>
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -132,9 +140,12 @@
                     <img class="img-responsive" src="img/beginning-02.jpg" />
                 </div>
                 <div class="col-sm-8 beginning2-content">
-                    <p>
-                        For its debut collection, adidas Originals XBYO draws upon decades of experience to produce a series of premium apparel pieces that goes back to the basics. A trifecta of collaborative mastery relizes this vision: design put forth by adidas Originals, fabric knitted by Yamayo Textile and patterns cut by Satomi Nakamura. <br/><br/>
+                    <p class="thebeginning__text">
+                        For its debut collection, adidas Originals XBYO draws upon decades of experience to produce a series of premium apparel pieces that goes back to the basics. A trifecta of collaborative mastery relizes this vision: design put forth by adidas Originals, fabric knitted by Yamayo Textile and patterns cut by Satomi Nakamura.</p>
+                    <p class="thebeginning__text">
                         Thus the iconic 'X,' adorning each piece produced by this connection, has evolved to represent the cross section of seemingly disparate elements, uniting East and West, sport and everyday life, form and function. <br/><br/>
+                    </p>
+                    <p class="thebeginning__text">
                         It began with the ‘X’ and it certainly will not end there. This is the story of XBYO.
                     </p>
                 </div>
@@ -147,26 +158,37 @@
             <div id="four" class="row row-eq-height vertical-center">
                 <div class="col-sm-8 themaker">
                     <h3>The maker</h3>
-                    <p>Cuts for the collection were devised by renowned pattern maker Satomi Nakamura, bringing a sharpened and refined cut to classic sportswear designs.</p>
-                    <p>Nakamura humbly considers her role as being a “realizer of dreams,” listening attentively to the needs of the client. She adamantly resists fleeting external influences and applies intuition and 30 years of experience as a patternmaker to solve them.</p>
+                    <p class="themaker__text">Cuts for the collection were devised by renowned pattern maker Satomi Nakamura, bringing a sharpened and refined cut to classic sportswear designs.</p>
+                    <p class="themaker__text">Nakamura humbly considers her role as being a “realizer of dreams,” listening attentively to the needs of the client. She adamantly resists fleeting external influences and applies intuition and 30 years of experience as a patternmaker to solve them.</p>
                 </div>
-                <div class="col-sm-4 gridleft">
-                    <img class="img-responsive" src="img/the-maker-03.jpg" />
-                    <p class="threed" style="background:#c0bfbf;">
-                        “I wanted to introduce the idea of a 3D look, a 3D approach to clothing.”
-                        <em>Mrs Satomi Nakamura</em>
-                    </p>
+                <div class="col-sm-4 gridleft themaker-look">
+                    <div class="col-top">
+                        <img class="img-responsive themaker-look__image" src="img/the-maker-03.jpg" />
+                    </div>
+                    <div class="col-bottom">
+                        <div class="themaker-look__text">
+                            <p>
+                                “I wanted to introduce the idea of a 3D look, a 3D approach to clothing.”
+                            </p>
+                            <p>
+                                <em>Mrs Satomi Nakamura</em>
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div id="four2" class="row row-eq-height vertical-center">
-                <div class="col-sm-4 gridright">
-                    <img class="img-responsive" src="img/the-maker-01.jpg" />
-                    <img class="img-responsive" src="img/the-maker-02.jpg" />
-                    
+                <div class="col-sm-4 gridright themaker-making">
+                    <div class="col-top">
+                        <img class="img-responsive" src="img/the-maker-01.jpg" />
+                    </div>
+                    <div class="col-bottom">
+                        <img class="img-responsive" src="img/the-maker-02.jpg" />
+                    </div>
                 </div>
                 <div class="col-sm-8">
-                    <p>Ms. Nakamura took several trips to the adidas headquarters in Herzogenaurach to collaborate with the team and help define XBYO’s initial collection. The goal was to create a pleasing and flattering silhouette that still enjoyed a generous range of motion.</p>
-                    <p>Understated details such as the preference of darts over the seams result in an instantly-recognizable but no less minimalist reinterpretation of classic silhouettes. Intricate cutting likewise means fewer separate pieces and fewer seams against the skin.</p>
+                    <p class="themaker__text">Ms. Nakamura took several trips to the adidas headquarters in Herzogenaurach to collaborate with the team and help define XBYO’s initial collection. The goal was to create a pleasing and flattering silhouette that still enjoyed a generous range of motion.</p>
+                    <p class="themaker__text">Understated details such as the preference of darts over the seams result in an instantly-recognizable but no less minimalist reinterpretation of classic silhouettes. Intricate cutting likewise means fewer separate pieces and fewer seams against the skin.</p>
                 </div>
             </div>
         </div>
@@ -206,26 +228,34 @@
 
         <!-- CONTENT: The material -->
         <div class="toggle-eight">
-            <div id="eight" class="row row-eq-height">
+            <div id="eight" class="row row-eq-height vertical-center">
                 <div class="col-sm-8 materialone">
                     <h3 class="material">The material</h3>
-                    <p>Not long after the debut of the Italia running shoe at the Rome Olympics in 1960, sportswear began to incorporate synthetic fibers such as nylon and polyester, and mills that had first worked with cotton such as Yamayo were ready for such innovation. From there, the relationship between Yamayo and adidas would only deepen. As adidas grew, so did Yamayo; such that Yamashita-san would present his newest developments to adidas.   </p>
+                    <p class="materialone__text">Not long after the debut of the Italia running shoe at the Rome Olympics in 1960, sportswear began to incorporate synthetic fibers such as nylon and polyester, and mills that had first worked with cotton such as Yamayo were ready for such innovation.</p>
+                    <p class="materialone__text">From there, the relationship between Yamayo and adidas would only deepen. As adidas grew, so did Yamayo; such that Yamashita-san would present his newest developments to adidas.   </p>
                 </div>
-                <div class="col-sm-4 gridleft">
-                    <img width="100%" src="img/the-material-03.jpg" />
-                    <p class="impossible">
-                        “We constantly challenge ourselves <br/>
-                        to make the impossible possible.”<br/>
-                        <em style="text-transform:capitalize">Mr Ikuo Yamashita</em>
-                    </p>
+                <div class="col-sm-4 gridleft thematerial-challenge">
+                    <div class="col-top">
+                        <img class="img-responsive thematerial-challenge__image" src="img/the-material-03.jpg" />
+                    </div>
+                    <div class="col-bottom">
+                        <div class="thematerial-challenge__text">
+                            <p>
+                                “We constantly challenge ourselves to make the impossible possible.”
+                            </p>
+                            <p>
+                                <em>Mr Ikuo Yamashita</em>
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div id="eight" class="row row-eq-height">
                 <div class="col-sm-4 gridright">
-                    <img width="100%" style="padding:15px 0px 15px 15px;border-left:0px solid black;border-bottom:0px solid black"  src="img/material-sm.jpg  " />
+                    <img class="img-responsive" src="img/the-material-08.jpg" />
                 </div>
                 <div class="col-sm-8">
-                    <img width="100%" src="img/the-material-01.jpg" />
+                    <img class="img-responsive" src="img/the-material-01.jpg" />
                 </div>
             </div>
         </div>
@@ -236,51 +266,49 @@
             <!-- Row 4 Item 1 -->
             <div class="col-sm-4 gridright">
                 <div>
-                    <!-- <div id="lightgallery">
-                    <a href="img/09.jpg">
-                        <img src="img/09.jpg" />
-                    </a>
-
-                    </div> -->
-
                     <div id="lightgallerylook">
                         <a href="img/09.jpg">
                             <img width="100%" class="grayscale" src="img/lookbook.jpg" />
-                            <div class="demo-gallery-poster hide" style="top:200px">
+                            <div class="demo-gallery-poster hide">
                                 <h3>The lookbook</h3>
                                 <br/><br/>
                                 <img width="50" src="img/arrow-down.png" />
                             </div>
                         </a>
-                        <a style="display:none" href="img/gallery/lookbook-01.jpg">
-                            <img src="img/gallery/lookbook-01.jpg" />
+                        <a style="display:none" href="img/gallery/XBYO_LOOKBOOK_1.jpg">
+                            <img src="img/gallery/XBYO_LOOKBOOK_1.jpg" />
                         </a>
-                        <a style="display:none" href="img/gallery/lookbook-02.jpg">
-                            <img src="img/gallery/lookbook-02.jpg" />
+                        <a style="display:none" href="img/gallery/XBYO_LOOKBOOK_2.jpg">
+                            <img src="img/gallery/XBYO_LOOKBOOK_2.jpg" />
                         </a>
-                        <a style="display:none" href="img/gallery/lookbook-03.jpg">
-                            <img src="img/gallery/lookbook-03.jpg" />
+                        <a style="display:none" href="img/gallery/XBYO_LOOKBOOK_3.jpg">
+                            <img src="img/gallery/XBYO_LOOKBOOK_3.jpg" />
                         </a>
-                        <a style="display:none" href="img/gallery/lookbook-04.jpg">
-                            <img src="img/gallery/lookbook-04.jpg" />
+                        <a style="display:none" href="img/gallery/XBYO_LOOKBOOK_4.jpg">
+                            <img src="img/gallery/XBYO_LOOKBOOK_4.jpg" />
                         </a>
-                        <a style="display:none" href="img/gallery/lookbook-05.jpg">
-                            <img src="img/gallery/lookbook-05.jpg" />
+                        <a style="display:none" href="img/gallery/XBYO_LOOKBOOK_5.jpg">
+                            <img src="img/gallery/XBYO_LOOKBOOK_5.jpg" />
                         </a>
-                        <a style="display:none" href="img/gallery/lookbook-06.jpg">
-                            <img src="img/gallery/lookbook-06.jpg" />
+                        <a style="display:none" href="img/gallery/XBYO_LOOKBOOK_6.jpg">
+                            <img src="img/gallery/XBYO_LOOKBOOK_6.jpg" />
                         </a>
-                        <a style="display:none" href="img/gallery/lookbook-07.jpg">
-                            <img src="img/gallery/lookbook-07.jpg" />
+                        <a style="display:none" href="img/gallery/XBYO_LOOKBOOK_7.jpg">
+                            <img src="img/gallery/XBYO_LOOKBOOK_7.jpg" />
+                        </a>
+                        <a style="display:none" href="img/gallery/XBYO_LOOKBOOK_8.jpg">
+                            <img src="img/gallery/XBYO_LOOKBOOK_8.jpg" />
+                        </a>
+                        <a style="display:none" href="img/gallery/XBYO_LOOKBOOK_9.jpg">
+                            <img src="img/gallery/XBYO_LOOKBOOK_9.jpg" />
+                        </a>
+                        <a style="display:none" href="img/gallery/XBYO_LOOKBOOK_10.jpg">
+                            <img src="img/gallery/XBYO_LOOKBOOK_10.jpg" />
+                        </a>
+                        <a style="display:none" href="img/gallery/XBYO_LOOKBOOK_11.jpg">
+                            <img src="img/gallery/XBYO_LOOKBOOK_11.jpg" />
                         </a>
                     </div>
-                    <!--   <div class="hide">
-                    <a href="img/09.jpg">
-
-                    <h3>VIEW LOOKBOOK</h3><br/><br/>
-                        <img src="img/arrow-down.jpg" />
-                    </a>
-                    </div>  -->
                 </div>
             </div>
 
@@ -295,20 +323,57 @@
             
             <!-- Row 4 Item 3 -->
             <div class="col-sm-4 gridleft">
-                <a id="toggle-four" data="four" class="toggleaction" >
-                    <img width="100%" class="grid grayscale four" src="img/the-making-of.jpg" />
-                    <div class="hide">
-                        <h3>The making of</h3>
-                        <br/><br/>
-                        <img width="50" src="img/arrow-down.png" />
+                <div>
+                    <div id="lightgallerythree">
+                        <a href="img/gallery/XBYO_MAKINGOF_1.jpg">
+                            <img width="100%" class="grayscale" src="img/the-making-of.jpg" />
+                            <div class="demo-gallery-poster hide">
+                                <h3>The making of</h3>
+                                <br/><br/>
+                                <img width="50" src="img/arrow-down.png">
+                            </div>
+                        </a>
+                        <a style="display:none" href="img/gallery/XBYO_MAKINGOF_2.jpg">
+                            <img src="img/gallery/XBYO_MAKINGOF_2.jpg" />
+                        </a>
+                        <a style="display:none"href="img/gallery/XBYO_MAKINGOF_3.jpg">
+                            <img src="img/gallery/XBYO_MAKINGOF_3.jpg" />
+                        </a>
+                        <a style="display:none"href="img/gallery/XBYO_MAKINGOF_4.jpg">
+                            <img src="img/gallery/XBYO_MAKINGOF_4.jpg" />
+                        </a>
+                        <a style="display:none" href="img/gallery/XBYO_MAKINGOF_5.jpg">
+                            <img src="img/gallery/XBYO_MAKINGOF_5.jpg" />
+                        </a>
+                        <a style="display:none"href="img/gallery/XBYO_MAKINGOF_6.jpg">
+                            <img src="img/gallery/XBYO_MAKINGOF_6.jpg" />
+                        </a>
+                        <a style="display:none" href="img/gallery/XBYO_MAKINGOF_7.jpg">
+                            <img src="img/gallery/XBYO_MAKINGOF_7.jpg" />
+                        </a>
+                        <a style="display:none"href="img/gallery/XBYO_MAKINGOF_8.jpg">
+                            <img src="img/gallery/XBYO_MAKINGOF_8.jpg" />
+                        </a>
+                        <a style="display:none"href="img/gallery/XBYO_MAKINGOF_9.jpg">
+                            <img src="img/gallery/XBYO_MAKINGOF_9.jpg" />
+                        </a>
+                        <a style="display:none"href="img/gallery/XBYO_MAKINGOF_10.jpg">
+                            <img src="img/gallery/XBYO_MAKINGOF_10.jpg" />
+                        </a>
+                        <a style="display:none"href="img/gallery/XBYO_MAKINGOF_11.jpg">
+                            <img src="img/gallery/XBYO_MAKINGOF_11.jpg" />
+                        </a>
+                        <a style="display:none" href="img/gallery/XBYO_MAKINGOF_12.jpg">
+                            <img src="img/gallery/XBYO_MAKINGOF_12.jpg" />
+                        </a>
                     </div>
-                </a>
+                </div>
             </div>
         </div>
         <!-- END ROW 4 -->
 
         <!-- ROW 5 -->
-        <div class="row row-eq-height">
+        <div class="row row-eq-height noborder">
             <!-- Row 5 Item 1 -->
             <div class="col-sm-8">
                 <figure>
@@ -344,15 +409,6 @@
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
 
-    <script type="text/javascript">
-        $(document).ready(function() {
-            $("#lightgallery").lightGallery(); 
-            $("#lightgallerytwo").lightGallery(); 
-            $("#lightgallerythree").lightGallery(); 
-            $("#lightgallerylook").lightGallery(); 
-        });
-    </script>
-
     <!-- A jQuery plugin that adds cross-browser mouse wheel support. (Optional) -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
     <script src="js/lightgallery.min.js"></script>
@@ -360,6 +416,7 @@
     <!-- lightgallery plugins -->
     <script src="js/lg-thumbnail.min.js"></script>
     <script src="js/lg-fullscreen.min.js"></script>
+    
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <!--<script>
     (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=

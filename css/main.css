@@ -103,11 +103,11 @@ h3.journey__heading{
     border: 1px solid #ccc;
 }
 
-#lightgallerythree {
+/*#lightgallerythree {
 	padding:0px 15px 15px;
-}
+}*/
 
-body{
+body {
 	font-size:20px;
 	line-height:16px;
 	text-align: center;
@@ -119,7 +119,6 @@ p {
 	padding-bottom:20px;
     font-family: 'AdihausDIN-Regular';
     line-height:26px;
-
 }
 
 a, a:focus, a:active{color:white;
@@ -128,8 +127,42 @@ text-decoration: none;}
 a:hover{color:white;
 text-decoration: none;}
 
+/* Overlay effects */
 
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 5;
+    opacity: 0;
+    background: #dedede;
+    transition: all 0.5s ease;
+}
 
+.content-open > .overlay {
+    display: block;
+    opacity: 0.85;
+    transition: all 0.5s ease;
+}
+
+div[class^='toggle-'] {
+    z-index: 10;
+}
+
+div[class^='toggle-'] > div {
+    background: #ffffff; 
+}
+
+.close-button {
+    position: absolute;
+    right: -10px;
+    top: -50px;
+    width: 38px;
+    pointer-events: none;
+}
 
 /* HEADER */
 
@@ -143,7 +176,7 @@ text-decoration: none;}
 }
 
 .row.noborder{
-	border-bottom:0px solid black;
+	border-bottom: 0;
 }
 
 /** ALIGNMENT */
@@ -161,6 +194,7 @@ text-decoration: none;}
 /* GRID */
 
 .container__border{
+    margin-bottom: 100px;
 	border:1px solid black;
 }
 
@@ -170,6 +204,13 @@ text-decoration: none;}
 
 .row > div {
     padding: 15px;
+}
+
+.row > .our-past,
+.row > .themaker-look,
+.row > .themaker-making,
+.row > .thematerial-challenge {
+    padding: 0;
 }
 
 .row-eq-height {
@@ -189,13 +230,12 @@ text-decoration: none;}
 }
 
 .col-top{
-	border-bottom:0px solid black;
+	border-bottom:1px solid black;
 	padding:15px;
 }
 
 .col-bottom{
-		padding:0px 15px 0px 15px;
-
+	padding:15px;
 }
 
 .mix{
@@ -206,9 +246,9 @@ text-decoration: none;}
 	padding-bottom:15px;
 }
 
-.col-sm-4 .col-top{
+/*.col-sm-4 .col-top{
 padding:0px 15px 0px 15px;
-}
+}*/
 
 .col-sm-4.gridleft.mixlong, .col-sm-4.gridright.mixlong{
 
@@ -451,7 +491,104 @@ img.grayscale.color{
 
 /* The beginning */
 
+ .thebeginning__text {
+    padding-left: 10%;
+    padding-right: 10%;
+ }
+
 .our-past__text {
     padding: 30px 45px;
-    background:#c0bfbf;
+    background:#f1f1f1;
+}
+
+.our-past__text p {
+    padding-bottom: 0;
+}
+
+.our-past__image {
+    padding: 30px;
+}
+
+/* The maker */
+
+.themaker__text {
+    padding-left: 9%;
+    padding-right: 9%;
+}
+
+.themaker-look__text {
+    padding: 30px 30px;
+    background:#f1f1f1;
+}
+
+.themaker-look__text p {
+    padding-bottom: 0;
+}
+
+/* The material */
+
+.materialone__text {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.thematerial-challenge__text {
+    padding: 30px 30px;
+    background:#f1f1f1;
+}
+
+.thematerial-challenge__text p {
+    padding-bottom: 0;
+}
+
+/* Gallery */
+
+.lg-backdrop {
+    background-color: rgba(222,222,222,0.85);
+}
+
+.lg-toolbar {
+    display: none;
+}
+
+.lg-outer .lg-thumb-outer {
+    height: 100% !important;
+    background-color: transparent;
+    top: 0;
+    bottom: initial;
+    max-height: 100%;
+    z-index: 1;
+}
+
+.lg-thumb.group {
+    position: initial;
+    top: 50%;
+    left: 55%;
+    transform: translateY(-50%) !important;
+    width: 30% !important;
+    min-width: 340px;
+}
+
+.lg-outer .lg-inner {
+    width: 55%;
+}
+
+.lg-outer .lg-thumb {
+     height: initial; 
+}
+
+.lg-outer .lg-thumb-item {
+    border-radius: 0;
+    border: 0;
+    margin-bottom: 10px;
+    margin-right: 10px !important;
+}
+
+.lg-outer .lg-thumb-item {
+    height: auto;
+}
+
+.lg-outer .lg-img-wrap {
+    text-align: right;
+    padding-right: 20px;
 }
