@@ -23,19 +23,17 @@
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
     <div class="container">
-        <nav class="navbar" role="navigation">
-            <div class="row noborder">
-                <div class="col-sm-4">
-                    <img class="left" width="58px" src="img/adidas-logo.jpg" />
-                </div>
-                <div class="col-sm-4">
-                    <img width="167px" src="img/xbyo-logo.jpg" />
-                </div>
-                <div class="col-sm-4">
-                    <img class="right" width="205px" src="img/original-logo.jpg" />
-                </div>
+        <div class="row noborder">
+            <div class="col-sm-4">
+                <img class="left" width="58px" src="img/adidas-logo.jpg" />
             </div>
-        </nav>
+            <div class="col-sm-4">
+                <img width="167px" src="img/xbyo-logo.jpg" />
+            </div>
+            <div class="col-sm-4">
+                <img class="right" width="205px" src="img/original-logo.jpg" />
+            </div>
+        </div>
     </div>
 
     <div class="container container__border">
@@ -68,32 +66,11 @@
         </div>
         <!--END ROW 1-->
 
-        <div class="row toggle-one" data-grid="one">
-            <div class="col-sm-12 ">
-                <div id="one" class="row noborder">
-                    <div class="col-sm-4" class="padding-50-50">
-                        <h3> FIRST ITEM FIRST ROWffff </h3>
-                        <p>
-                            Inspired by adidas Originals’ archive as the first dedicatedapparel range, XBYO represents the brand’s authentic DNA. Discover a range designed to elevate everyday streetwear for a contemporary consumer who appreciates the concept of timeless premium basics.
-                        </p>
-                    </div>
-                    <div class="col-sm-8">
-                        <a href="#" id="toggle-close-one" class="toggleaction" >
-                            <img width="25" class="right" style="margin:20px" src="img/close.png" />
-                        </a>
-                        <img width="100%" style="padding:0px 50px"    src="img/history.jpg" />
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        
-
-        <!-- Start of row 2 -->
+        <!-- ROW 2 -->
         <div class="row row-eq-height">
             <!-- Row 2 Item 1 -->
             <div class="col-sm-4 gridright">
-                <a href="#three" id="toggle-three" data="three" class="toggleaction" >
+                <a id="toggle-three" data="three" class="toggleaction" >
                     <img width="100%" class="grid grayscale three" src="img/03.jpg  "></img>
                     <div class="hide">
                         <h3>The beginning</h3>
@@ -114,7 +91,7 @@
             
             <!-- Row 2 Item 3 -->
             <div class="col-sm-4 gridleft">
-                <a href="#four" id="toggle-four" data="four" class="toggleaction" >
+                <a id="toggle-four" data="four" class="toggleaction" >
                     <img width="100%" class="grid grayscale four" src="img/04.jpg  " />
                     <div class="hide">
                         <h3>The maker</h3>
@@ -124,9 +101,9 @@
                 </a>
             </div>
         </div>
-        <!-- End of row 2 -->
+        <!-- END ROW 2 -->
 
-        <!-- CONTENT Row 1 Item 3 -->
+        <!-- CONTENT: The beginning -->
         <div class="toggle-three">
             <div id="three" class="row row-eq-height vertical-center">
                 <div class="col-sm-8">
@@ -163,8 +140,9 @@
                 </div>
             </div>
         </div>
+        <!-- END CONTENT: The beginning -->
 
-        <!-- CONTENT Row 2 Item 1-->
+        <!-- CONTENT: The maker -->
         <div class="toggle-four">
             <div id="four" class="row row-eq-height vertical-center">
                 <div class="col-sm-8 themaker">
@@ -192,41 +170,7 @@
                 </div>
             </div>
         </div>
-
-        <!-- CONTENT Row 2 Item 2-->
-        <div class="row toggle-five">
-            <div class="col-sm-12 ">
-                <div id="five" class="row noborder">
-                <div class="col-sm-12" style="padding:15px">
-                    <video width="100%" height="auto" controls poster="img/poster.jpg" onclick="this.play();">
-                    <source src="video/video.mp4" type="video/mp4">
-                    <source src="video/video.ogv" type="video/ogg">
-                    Your browser does not support the video tag.
-                    </video>
-                </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- CONTENT Row 2 Item 3-->
-        <div class="row toggle-six">
-            <div class="col-sm-12 ">
-                <div id="six"  class="row noborder">
-                    <div class="col-sm-4" class="padding-50-50">
-                        <h3> HISTORY OF THE X 3</h3>
-                        <p>
-                        Inspired by adidas Originals’ archive as the first dedicatedapparel range, XBYO represents the brand’s authentic DNA. Discover a range designed to elevate everyday streetwear for a contemporary consumer who appreciates the concept of timeless premium basics.
-                        </p>
-                    </div>
-                    <div class="col-sm-8">
-                        <a href="#" id="toggle-close-six" class="toggleaction" >
-                        <img width="25" class="right" style="margin:20px" src="img/close.png  " />
-                        </a>
-                        <img width="100%" style="padding:0px 50px"  src="img/history.jpg  " />
-                    </div>
-                </div>
-            </div>
-        </div>
+        <!-- END CONTENT: The maker -->
 
         <!-- ROW 3 -->
         <div class="row row-eq-height">
@@ -239,7 +183,7 @@
             </div>
 
             <div class="col-sm-4">
-                <a href="#eight" id="toggle-eight" data="four" class="toggleaction" >
+                <a id="toggle-eight" data="four" class="toggleaction" >
                     <img width="100%" class="gridcenter grayscale eight big" src="img/8.jpg" />
                     <img width="100%" class="gridcenter grayscale eight sm" src="img/8-sm.jpg" />
                     <div class="hide">
@@ -258,9 +202,9 @@
                 <p class="card__text">Expert craftsmanship and high-quality material choice.</p>
             </div>
         </div>
+        <!-- END ROW 3 -->
 
-
-        <!-- CONTENT Row 3 Item 1-->
+        <!-- CONTENT: The material -->
         <div class="toggle-eight">
             <div id="eight" class="row row-eq-height">
                 <div class="col-sm-8 materialone">
@@ -285,8 +229,9 @@
                 </div>
             </div>
         </div>
+        <!-- END CONTENT: The material -->
 
-        <!-- Start of row 4 -->
+        <!-- ROW 4 -->
         <div class="row row-eq-height">
             <!-- Row 4 Item 1 -->
             <div class="col-sm-4 gridright">
@@ -350,7 +295,7 @@
             
             <!-- Row 4 Item 3 -->
             <div class="col-sm-4 gridleft">
-                <a href="#four" id="toggle-four" data="four" class="toggleaction" >
+                <a id="toggle-four" data="four" class="toggleaction" >
                     <img width="100%" class="grid grayscale four" src="img/the-making-of.jpg" />
                     <div class="hide">
                         <h3>The making of</h3>
@@ -360,9 +305,9 @@
                 </a>
             </div>
         </div>
-        <!-- End of row 4 -->
+        <!-- END ROW 4 -->
 
-        <!-- Start of row 5 -->
+        <!-- ROW 5 -->
         <div class="row row-eq-height">
             <!-- Row 5 Item 1 -->
             <div class="col-sm-8">
@@ -382,7 +327,7 @@
                         <h3 class="shop__heading">
                             Shop the XBYO collection
                         </h3>
-                        <p>Click here</p>
+                        <p class="shop__text">Click here</p>
                     </div>
                 </a>
                 <div>
@@ -390,69 +335,39 @@
                 </div>
             </div>
         </div>
-        <!-- End of row 5-->
+        <!-- END ROW 5-->
 
     </div>
-</div>
 
-<!-- CONTENT Row 3 Item 3-->
-<div class="row toggle-nine">
-    <div class="col-sm-12 ">
-        <div id="nine" class="row noborder" style="border-top:1px solid black !important">
-        <div class="col-sm-4" class="padding-50-50">
-            <h3> HISTORY OF THE X 3</h3>
-            <p>
-            Inspired by adidas Originals’ archive as the first dedicatedapparel range, XBYO represents the brand’s authentic DNA. Discover a range designed to elevate everyday streetwear for a contemporary consumer who appreciates the concept of timeless premium basics.
-            </p>
-        </div>
-        <div class="col-sm-8">
-            <a href="#" id="toggle-close-nine" class="toggleaction" >
-                <img width="25" class="right" style="margin:20px" src="img/close.png" />
-            </a>
-            <img width="100%" style="padding:0px 50px"  src="img/history.jpg" />
-        </div>
-    </div>
-</div>
-</div>
-</div> <!-- /container -->    
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
 
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $("#lightgallery").lightGallery(); 
+            $("#lightgallerytwo").lightGallery(); 
+            $("#lightgallerythree").lightGallery(); 
+            $("#lightgallerylook").lightGallery(); 
+        });
+    </script>
 
-<!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script> -->
-<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
-<script src="js/vendor/bootstrap.min.js"></script>
-<script src="js/plugins.js"></script>
-<script src="js/main.js"></script>
+    <!-- A jQuery plugin that adds cross-browser mouse wheel support. (Optional) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
+    <script src="js/lightgallery.min.js"></script>
 
-<script type="text/javascript">
-    $(document).ready(function() {
-        $("#lightgallery").lightGallery(); 
-        $("#lightgallerytwo").lightGallery(); 
-        $("#lightgallerythree").lightGallery(); 
-        $("#lightgallerylook").lightGallery(); 
-    });
-</script>
-
-<!-- A jQuery plugin that adds cross-browser mouse wheel support. (Optional) -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
-<script src="js/lightgallery.min.js"></script>
-
-<!-- lightgallery plugins -->
-<script src="js/lg-thumbnail.min.js"></script>
-<script src="js/lg-fullscreen.min.js"></script>
-<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-<!--<script>
-(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-        function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-        e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-        e.src='//www.google-analytics.com/analytics.js';
-        r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-        ga('create','UA-XXXXX-X','auto');ga('send','pageview');
-    </script>-->
+    <!-- lightgallery plugins -->
+    <script src="js/lg-thumbnail.min.js"></script>
+    <script src="js/lg-fullscreen.min.js"></script>
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <!--<script>
+    (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+        </script>-->
 </body>
 </html>

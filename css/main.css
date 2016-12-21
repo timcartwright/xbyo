@@ -74,9 +74,13 @@ h3 {
     color:white;
 }
 
-h3.shop__heading{
+.shop__heading{
     padding:40px 0 10px 0;
     line-height: 32px;
+}
+
+.shop__text {
+    padding-bottom: 40px;
 }
 
 .journey {
@@ -301,7 +305,7 @@ img.grayscale:hover{
     -webkit-filter: grayscale(0%);
 }
 
-img.grayscale.oui {
+img.grayscale.remove-grayscale {
     filter: none;
     -webkit-filter: grayscale(0%);
 }
