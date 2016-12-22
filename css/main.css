@@ -84,7 +84,7 @@ h3 {
     padding-bottom: 40px;
 }
 
-.journey {
+.journey__wrap {
     background-color:#f1f1f1;
     height: 100%;
     padding: 30px;
@@ -153,22 +153,21 @@ text-decoration: none;}
 /* Overlay effects */
 
 .overlay {
-    display: none;
+    display: block;
     position: fixed;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
-    z-index: 5;
+    z-index: -1;
     opacity: 0;
     background: #dedede;
-    transition: all 0.5s ease;
+    transition: all 0.3s ease;
 }
 
 .content-open > .overlay {
-    display: block;
     opacity: 0.9;
-    transition: all 0.5s ease;
+    z-index: 5;
 }
 
 div[class^='toggle-'] {
@@ -493,6 +492,7 @@ img.grayscale.color{
 .card__image {
     padding: 5%;
     margin: 0 auto;
+    width: 600px;
 }
 
 .card__title, h3, .video__caption {

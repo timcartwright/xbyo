@@ -53,8 +53,8 @@
                 </figure>
             </div>
             <!-- Row 1 Item 2 -->
-            <div class="col-lg-4 gridleft">
-                <div class="journey">
+            <div class="col-lg-4 gridleft journey">
+                <div class="journey__wrap">
                     <h3 class="journey__heading">
                         ‘X’ marks the journey
                     </h3>
@@ -71,14 +71,16 @@
         <div class="row row-eq-height">
             <!-- Row 2 Item 1 -->
             <div class="col-sm-4 gridright">
-                <a id="toggle-three" data="three" class="toggleaction" >
-                    <img width="100%" class="grid grayscale three" src="img/03.jpg" />
-                    <div class="hide">
-                        <h3>The beginning</h3>
-                        <br/><br/>
-                        <img width="50" src="img/arrow-down.png" />
-                    </div>
-                </a>
+                <div class="full-image">
+                    <a id="toggle-three" data="three" class="toggleaction" >
+                        <img width="100%" class="grid grayscale three" src="img/03.jpg" />
+                        <div class="hide">
+                            <h3>The beginning</h3>
+                            <br/><br/>
+                            <img width="50" src="img/arrow-down.png" />
+                        </div>
+                    </a>
+                </div>
             </div>
 
             <!-- Row 2 Item 2 -->
@@ -92,14 +94,16 @@
             
             <!-- Row 2 Item 3 -->
             <div class="col-sm-4 gridleft">
-                <a id="toggle-four" data="four" class="toggleaction" >
-                    <img width="100%" class="grid grayscale four" src="img/04.jpg  " />
-                    <div class="hide">
-                        <h3>The maker</h3>
-                        <br/><br/>
-                        <img width="50" src="img/arrow-down.png" />
-                    </div>
-                </a>
+                <div class="full-image">
+                    <a id="toggle-four" data="four" class="toggleaction" >
+                        <img width="100%" class="grid grayscale four" src="img/04.jpg  " />
+                        <div class="hide">
+                            <h3>The maker</h3>
+                            <br/><br/>
+                            <img width="50" src="img/arrow-down.png" />
+                        </div>
+                    </a>
+                </div>
             </div>
         </div>
         <!-- END ROW 2 -->
@@ -137,7 +141,7 @@
 
             <div id="three2" class="row row-eq-height vertical-center">
                 <div class="col-sm-4 gridright">
-                    <img class="img-responsive" src="img/beginning-02.jpg" />
+                    <img class="img-responsive center-block" src="img/beginning-02.jpg" />
                 </div>
                 <div class="col-sm-8 beginning2-content">
                     <p class="thebeginning__text">
@@ -205,15 +209,17 @@
             </div>
 
             <div class="col-sm-4">
-                <a id="toggle-eight" data="four" class="toggleaction" >
-                    <img width="100%" class="gridcenter grayscale eight big" src="img/8.jpg" />
-                    <!--<img width="100%" class="gridcenter grayscale eight sm" src="img/8-sm.jpg" />-->
-                    <div class="hide">
-                        <h3>The material</h3>
-                        <br/><br/>
-                        <img width="50" src="img/arrow-down.png" />
-                    </div>
-                </a>
+                <div class="full-image full-image--material">
+                    <a id="toggle-eight" data="four" class="toggleaction" >
+                        <img width="100%" class="gridcenter grayscale eight" src="img/8.jpg" />
+                        <!--<img width="100%" class="gridcenter grayscale eight sm" src="img/8-sm.jpg" />-->
+                        <div class="hide">
+                            <h3>The material</h3>
+                            <br/><br/>
+                            <img width="50" src="img/arrow-down.png" />
+                        </div>
+                    </a>
+                </div>
             </div>
 
             <div class="col-sm-4 card gridleft">
@@ -252,7 +258,7 @@
             </div>
             <div id="eight" class="row row-eq-height">
                 <div class="col-sm-4 gridright">
-                    <img class="img-responsive" src="img/the-material-08.jpg" />
+                    <img class="img-responsive center-block" src="img/the-material-08.jpg" />
                 </div>
                 <div class="col-sm-8">
                     <img class="img-responsive" src="img/the-material-01.jpg" />
@@ -266,7 +272,7 @@
             <!-- Row 4 Item 1 -->
             <div class="col-sm-4 gridright">
                 <div>
-                    <div id="lightgallerylook">
+                    <div id="lightgallerylook" class="full-image">
                         <a href="img/lookbook.jpg">
                             <img width="100%" class="grayscale" src="img/lookbook.jpg" />
                             <div class="demo-gallery-poster hide">
@@ -324,7 +330,7 @@
             <!-- Row 4 Item 3 -->
             <div class="col-sm-4 gridleft">
                 <div>
-                    <div id="lightgallerymake">
+                    <div id="lightgallerymake" class="full-image">
                         <a href="img/gallery/XBYO_MAKINGOF_1.jpg">
                             <img width="100%" class="grayscale" src="img/the-making-of.jpg" />
                             <div class="demo-gallery-poster hide">
@@ -395,7 +401,7 @@
                         <p class="shop__text">Click here</p>
                     </div>
                 </a>
-                <div>
+                <div class="hide--sm">
                     <img class="img-responsive grayscale" src="img/filler.jpg" alt="Image">
                 </div>
             </div>

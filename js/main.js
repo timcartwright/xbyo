@@ -19,10 +19,10 @@
         $('[class^=toggle-]:not(' + target + ')').hide();
 
         $(target).slideToggle('slow', function() {
+            $('body').toggleClass('content-open');
             $('img.grayscale').removeClass('color');
             $(this).toggleClass('current');
             $(target).toggleClass('open');
-            $('body').toggleClass('content-open');
             $(target).prepend('<a id="close"><img class="close-button" src="img/close.png" /></a>');
         });
 
@@ -39,8 +39,8 @@
     $('.overlay').click(function() {
         $('body').removeClass('content-open');
         $('.open').slideToggle('slow', function() {
-            $('img.grayscale').removeClass('color');
             $('.current').removeClass('current');
+            $('img.grayscale').removeClass('color');
             $('.open').removeClass('open');
             $('#close').remove();
         });
