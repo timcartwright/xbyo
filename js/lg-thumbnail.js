@@ -222,11 +222,10 @@
         $thumb.on('click.lg touchend.lg', function() {
             var _$this = $(this);
             setTimeout(function() {
-
                 // In IE9 and bellow touch does not support
                 // Go to slide if browser does not support css transitions
                 if ((_this.thumbClickable && !_this.core.lgBusy) || !_this.core.doCss()) {
-                    _this.core.index = _$this.index();
+                    _this.core.index = _$this.index()-1; // Fixed by Tim to display the correct image
                     _this.core.slide(_this.core.index, false, true);
                 }
             }, 50);
