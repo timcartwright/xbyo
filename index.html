@@ -12,10 +12,10 @@
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/bootstrap-theme.min.css">
-    <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="css/lightbox.css">
     <link rel="stylesheet" href="css/lightgallery.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/responsive.css">
     <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
 </head>
 <body>
@@ -23,26 +23,26 @@
     <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-    <div class="container">
-        <div class="row noborder">
-            <div class="col-sm-4">
-                <img class="left" width="58px" src="img/adidas-logo.jpg" />
+    <div class="container header">
+        <div class="row row-eq-height vertical-center noborder">
+            <div class="col-xs-4">
+                <img class="left img-responsive header__image header__image--adidas" src="img/adidas-logo.jpg" />
             </div>
-            <div class="col-sm-4">
-                <img width="167px" src="img/xbyo-logo.jpg" />
+            <div class="col-xs-4">
+                <img class="img-responsive header__image header__image--xbyo" src="img/xbyo-logo.jpg" />
             </div>
-            <div class="col-sm-4">
-                <img class="right" width="205px" src="img/original-logo.jpg" />
+            <div class="col-xs-4">
+                <img class="right img-responsive header__image header__image--original" src="img/original-logo.jpg" />
             </div>
         </div>
     </div>
 
-    <div class="container container__border">
+    <div class="container container--border">
 
         <!-- ROW 1 -->
-        <div class="row row-eq-height">
+        <div class="row row-eq-height row-eq-height--lg">
             <!-- Row 1 Item 1 -->
-            <div class="col-sm-8">
+            <div class="col-lg-8">
                 <figure>
                     <video width="100%" height="auto" controls poster="img/poster.jpg" onclick="this.play();">
                         <source src="video/video.mp4" type="video/mp4">
@@ -53,7 +53,7 @@
                 </figure>
             </div>
             <!-- Row 1 Item 2 -->
-            <div class="col-sm-4 gridleft">
+            <div class="col-lg-4 gridleft">
                 <div class="journey">
                     <h3 class="journey__heading">
                         ‘X’ marks the journey
@@ -72,7 +72,7 @@
             <!-- Row 2 Item 1 -->
             <div class="col-sm-4 gridright">
                 <a id="toggle-three" data="three" class="toggleaction" >
-                    <img width="100%" class="grid grayscale three" src="img/03.jpg  "></img>
+                    <img width="100%" class="grid grayscale three" src="img/03.jpg" />
                     <div class="hide">
                         <h3>The beginning</h3>
                         <br/><br/>
@@ -119,10 +119,10 @@
                 </div>
 
                 <div class="col-sm-4 gridleft our-past">
-                    <div class="col-top">
+                    <div class="column-top">
                         <img class="img-responsive our-past__image" src="img/history.jpg" />
                     </div>
-                    <div class="col-bottom">
+                    <div class="column-bottom">
                         <div class="our-past__text">
                             <p>
                                 “With XBYO what we really wanted to do was to celebrate our past but we wanted to put it in a new context”
@@ -143,7 +143,7 @@
                     <p class="thebeginning__text">
                         For its debut collection, adidas Originals XBYO draws upon decades of experience to produce a series of premium apparel pieces that goes back to the basics. A trifecta of collaborative mastery relizes this vision: design put forth by adidas Originals, fabric knitted by Yamayo Textile and patterns cut by Satomi Nakamura.</p>
                     <p class="thebeginning__text">
-                        Thus the iconic 'X,' adorning each piece produced by this connection, has evolved to represent the cross section of seemingly disparate elements, uniting East and West, sport and everyday life, form and function. <br/><br/>
+                        Thus the iconic 'X,' adorning each piece produced by this connection, has evolved to represent the cross section of seemingly disparate elements, uniting East and West, sport and everyday life, form and function.
                     </p>
                     <p class="thebeginning__text">
                         It began with the ‘X’ and it certainly will not end there. This is the story of XBYO.
@@ -162,10 +162,10 @@
                     <p class="themaker__text">Nakamura humbly considers her role as being a “realizer of dreams,” listening attentively to the needs of the client. She adamantly resists fleeting external influences and applies intuition and 30 years of experience as a patternmaker to solve them.</p>
                 </div>
                 <div class="col-sm-4 gridleft themaker-look">
-                    <div class="col-top">
+                    <div class="column-top">
                         <img class="img-responsive themaker-look__image" src="img/the-maker-03.jpg" />
                     </div>
-                    <div class="col-bottom">
+                    <div class="column-bottom">
                         <div class="themaker-look__text">
                             <p>
                                 “I wanted to introduce the idea of a 3D look, a 3D approach to clothing.”
@@ -179,10 +179,10 @@
             </div>
             <div id="four2" class="row row-eq-height vertical-center">
                 <div class="col-sm-4 gridright themaker-making">
-                    <div class="col-top">
+                    <div class="column-top">
                         <img class="img-responsive" src="img/the-maker-01.jpg" />
                     </div>
-                    <div class="col-bottom">
+                    <div class="column-bottom">
                         <img class="img-responsive" src="img/the-maker-02.jpg" />
                     </div>
                 </div>
@@ -207,10 +207,10 @@
             <div class="col-sm-4">
                 <a id="toggle-eight" data="four" class="toggleaction" >
                     <img width="100%" class="gridcenter grayscale eight big" src="img/8.jpg" />
-                    <img width="100%" class="gridcenter grayscale eight sm" src="img/8-sm.jpg" />
+                    <!--<img width="100%" class="gridcenter grayscale eight sm" src="img/8-sm.jpg" />-->
                     <div class="hide">
                         <h3>The material</h3>
-                            <br/><br/>
+                        <br/><br/>
                         <img width="50" src="img/arrow-down.png" />
                     </div>
                 </a>
@@ -235,10 +235,10 @@
                     <p class="materialone__text">From there, the relationship between Yamayo and adidas would only deepen. As adidas grew, so did Yamayo; such that Yamashita-san would present his newest developments to adidas.   </p>
                 </div>
                 <div class="col-sm-4 gridleft thematerial-challenge">
-                    <div class="col-top">
+                    <div class="column-top">
                         <img class="img-responsive thematerial-challenge__image" src="img/the-material-03.jpg" />
                     </div>
-                    <div class="col-bottom">
+                    <div class="column-bottom">
                         <div class="thematerial-challenge__text">
                             <p>
                                 “We constantly challenge ourselves to make the impossible possible.”
@@ -267,7 +267,7 @@
             <div class="col-sm-4 gridright">
                 <div>
                     <div id="lightgallerylook">
-                        <a href="img/09.jpg">
+                        <a href="img/lookbook.jpg">
                             <img width="100%" class="grayscale" src="img/lookbook.jpg" />
                             <div class="demo-gallery-poster hide">
                                 <h3>The lookbook</h3>
@@ -324,7 +324,7 @@
             <!-- Row 4 Item 3 -->
             <div class="col-sm-4 gridleft">
                 <div>
-                    <div id="lightgallerythree">
+                    <div id="lightgallerymake">
                         <a href="img/gallery/XBYO_MAKINGOF_1.jpg">
                             <img width="100%" class="grayscale" src="img/the-making-of.jpg" />
                             <div class="demo-gallery-poster hide">
@@ -416,7 +416,7 @@
     <!-- lightgallery plugins -->
     <script src="js/lg-thumbnail.min.js"></script>
     <script src="js/lg-fullscreen.min.js"></script>
-    
+
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <!--<script>
     (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=

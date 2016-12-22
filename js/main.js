@@ -1,15 +1,12 @@
 ;(function($) {
+    var $lgLook, $lgMake;
+
     // Initialise galleries
     $(document).ready(function() {
-        $("#lightgallery").lightGallery(); 
-        $("#lightgallerytwo").lightGallery(); 
-        $("#lightgallerythree").lightGallery(); 
-        $("#lightgallerylook").lightGallery({
-            // animateThumb: false,
-            // enableThumbDrag: false,
-            // enableThumbSwipe: false
-        }); 
+        $lgMake = $('#lightgallerymake').lightGallery(); 
+        $lgLook = $('#lightgallerylook').lightGallery();
     });
+
     // Colour image on hover
     $('.hide').hover(function() {
         $(this).prev('img.grayscale').toggleClass('remove-grayscale');
@@ -34,12 +31,12 @@
         };
 
         $('html, body').animate({
-            scrollTop: $(target).offset().top - 100
+            scrollTop: $(target).offset().top - 60
         }, 'slow');
     });
 
     // Close content
-    $('.overlay').on('click', function() {
+    $('.overlay').click(function() {
         $('body').removeClass('content-open');
         $('.open').slideToggle('slow', function() {
             $('img.grayscale').removeClass('color');
@@ -48,4 +45,18 @@
             $('#close').remove();
         });
     });
+
+    // Add close button to galleries
+    $('[id^=lightgallery]').click(function() {
+        $('.lg-thumb').prepend('<img class="close-button close-button--gallery" src="img/close.png" />');
+    });
+
+    // Close galleries
+    $(document).click(function(e) {
+        if (e.target == $('.lg-thumb-outer')[0]) {
+            $lgLook.data('lightGallery').destroy();
+            $lgMake.data('lightGallery').destroy();
+        }
+    });
+
 })(window.jQuery);

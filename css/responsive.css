@@ -2,88 +2,155 @@
 
 /* SMALL SCREEN NO RETINA*/
 
-@media only screen and (min-width: 990px) and (max-width: 1200px) {
+@media only screen and (max-width: 1199px) {
 
-h2.journey{
-	padding-top:60px;
+    .row-eq-height--lg {
+        display: block;
+    }
+
+    h3.journey__heading{
+        padding: 0;
+        font-size: 40px;
+    }
+
+    h2.journey{
+        padding-top:60px;
+    }
+
+    .hide, .demo-gallery-poster{
+        top:90px;
+    }
+
+    h3.shop{
+    padding:50px 0px;
+    }
+
+    #lightgallerythree {
+        padding:0px 15px 15px;
+    }
+
+    .beginning2 {
+        margin-top: -89px;
+    }
+
+    .beginning2-content{
+        padding:37px 50px 0px 50px;
+
+    }
+
+    .beginning2-content p{
+    padding-bottom:0px;
+        }
+
+    .themaker p br{
+        display:none;
+    }
+
+    .col-sm-4.themaker{
+        padding:0px 15px
+    }
+
+    .themaker h2{
+        margin-top:3px;
+    }
+
+    .materialone {
+        padding:7.5px 15px;
+    }
+
+    .threed br{
+        display: none;
+        text-align: center;
+        padding:0px 50px;
+    }
+
+    h3.threed{
+        padding:57px 70px
+    }
+
+    h3.impossible{
+        padding:21px 30px
+    }
+
+    .column-bottom.garment .hide{
+    top:300px;
+    }
+
+    img.big{display:none;}
+    img.sm{display:block;}
+    .makersecond {
+        padding:15px;
+    }
+
+    .makersecond p {
+    margin-bottom:0px;
+    padding-bottom:10px;
+    }
+
+    p {
+        /*padding-bottom: 40px;
+        font-family: 'AdihausDIN-Regular';*/
+        line-height: 21px;
+        font-size: 18px;
+    }
+
 }
 
-.hide, .demo-gallery-poster{
-	top:90px;
+@media only screen and (max-width: 991px) {
+
+    p {
+        font-size: 14px;
+        letter-spacing: 0.2ch;    
+    }
+
+    .card__text {
+        font-size: 16px;
+        letter-spacing: 0.2ch;    
+    }
+
+    .hide, .demo-gallery-poster{
+        top: 30px;
+    }
+
+    .header__image--xbyo {
+        margin: 0 auto;
+    }
+
 }
 
-h3.shop{
-padding:50px 0px;
-}
+@media only screen and (max-width: 767px) {
 
-#lightgallerythree {
-	padding:0px 15px 15px;
-}
+    .row-eq-height {
+        display: block;
+    }
 
-.beginning2 {
-    margin-top: -89px;
-}
+    .hide, .demo-gallery-poster{
+        top: 30%;
+    }
 
-.beginning2-content{
-	padding:37px 50px 0px 50px;
+    .container--border{
+        border: 0;
+    }
 
-}
+    .row {
+        border-bottom: 0;
+    }
 
-.beginning2-content p{
-padding-bottom:0px;
-	}
+    .gridright{
+        border-right: 0;
+    }
 
-.themaker p br{
-	display:none;
-}
+    .gridleft{
+        border-left: 0;
+    }
 
-.col-sm-4.themaker{
-	padding:0px 15px
-}
+    .column-top{
+        border-bottom: 0;
+    }
 
-.themaker h2{
-	margin-top:3px;
-}
-
-.materialone {
-	padding:7.5px 15px;
-}
-
-.threed br{
-	display: none;
-	text-align: center;
-	padding:0px 50px;
-}
-
-h3.threed{
-	padding:57px 70px
-}
-
-h3.impossible{
-	padding:21px 30px
-}
-
-.col-bottom.garment .hide{
-top:300px;
-}
-
-img.big{display:none;}
-img.sm{display:block;}
-.makersecond {
-	padding:15px;
-}
-
-.makersecond p {
-margin-bottom:0px;
-padding-bottom:10px;
-}
-
-p {
-    padding-bottom: 40px;
-    font-family: 'AdihausDIN-Regular';
-    line-height: 21px;
-    font-size: 18px;
-}
+    .container--border div[class^='col-'] {
+        border-bottom:1px solid black;
+    }
 
 }
 
