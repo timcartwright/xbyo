@@ -4,6 +4,10 @@
 
 @media only screen and (max-width: 1199px) {
 
+    .hide--md {
+        display: none;
+    }
+
     .row-eq-height--lg {
         display: block;
     }
@@ -94,7 +98,7 @@
         font-size: 18px;
     }
 
-    .journey {
+    .journey, .shop {
         border-left: 0;
     }
 
@@ -123,10 +127,6 @@
 }
 
 @media only screen and (max-width: 767px) {
-
-    .hide--sm {
-        display: none;
-    }
 
     .row-eq-height {
         display: block;
@@ -172,30 +172,41 @@
 
 /** TABLET LANDSCAPE **/
 
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) { 
+@media only screen and (max-device-width : 1024px) and (orientation : landscape) { 
 
-
+    .hide {
+        display: block !important;
+    }
 
 }
 
 /* TABLET PORTRAIT **/
 
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+@media only screen and (max-device-width : 1024px) and (orientation : portrait) {
 
-
+    .hide {
+        display: block !important;
+    }
 
 }
 
 /* MOBILE LANDSCAPE */
 
-@media only screen and (min-device-width : 275px) and (max-device-width : 667px) and (orientation : landscape) {
+@media only screen and (max-device-width : 667px) and (orientation : landscape) {
+
+    .hide {
+        display: block !important;
+    }
 
 }
 
 /* MOBILE PORTRAIT */
 
-@media only screen and (min-device-width : 375px) and (max-device-width : 667px) and (orientation : portrait) {
+@media only screen and (max-device-width : 667px) and (orientation : portrait) {
 
+    .hide {
+        display: block !important;
+    }
 
 }
 

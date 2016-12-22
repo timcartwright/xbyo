@@ -1,6 +1,15 @@
 ;(function($) {
     var $lgLook, $lgMake;
 
+    // Video player
+    $('.video__player').click(function() {
+        !this.paused ? this.pause() : this.play();
+    });
+
+    $('.video__player').hover(function() {
+        this.hasAttribute('controls') ? this.removeAttribute('controls') : this.setAttribute('controls', 'controls');
+    });
+
     // Initialise galleries
     $(document).ready(function() {
         $lgMake = $('#lightgallerymake').lightGallery(); 
