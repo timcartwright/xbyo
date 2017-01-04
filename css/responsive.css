@@ -1,5 +1,3 @@
-
-
 /* SMALL SCREEN NO RETINA*/
 
 @media only screen and (max-width: 1199px) {
@@ -96,8 +94,6 @@
     }
 
     p {
-        /*padding-bottom: 40px;
-        font-family: 'AdihausDIN-Regular';*/
         line-height: 21px;
         font-size: 18px;
     }

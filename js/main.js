@@ -44,7 +44,7 @@
         };
 
         $('html, body').animate({
-            scrollTop: $(target).offset().top - 70
+            scrollTop: $(target).offset().top - 60
         }, 'slow');
     });
 

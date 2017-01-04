@@ -15,57 +15,22 @@
   font-style: normal;
 }
 
-@font-face {
-  font-family: 'AdihausDIN-Cn';
-  src: url('../fonts/AdihausDIN-Cn.eot?#iefix') format('embedded-opentype'),  
-  url('../fonts/AdihausDIN-Cn.woff') format('woff'), 
-  url('../fonts/AdihausDIN-Cn.ttf')  format('truetype'), 
-  url('../fonts/AdihausDIN-Cn.svg#AdihausDIN-Cn') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'adineuePRO-Bold';
-  src: url('../fonts/adineuePRO-Bold.eot?#iefix') format('embedded-opentype'),  
-  url('../fonts/adineuePRO-Bold.otf')  format('opentype'),
-      url('../fonts/adineuePRO-Bold.woff') format('woff'), 
-      url('../fonts/adineuePRO-Bold.ttf')  format('truetype'), 
-      url('../fonts/adineuePRO-Bold.svg#adineuePRO-Bold') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-
 body, html {
     height: 100%;
 }
 
-body{
+body {
 	padding-top:0px;
     padding-bottom: 20px;
-}
-
-h2 {
-	font-family: 'adineuePRO-Bold';
+    font-size:20px;
+	line-height:16px;
 	text-align: center;
-	font-size:27px;
-	line-height:77px;
-}
-
-h2.journey{
-	padding-top:100px;
-}
-
-strong{
-	  font-family: 'adineuePRO-Bold';
+	font-family: 'AdihausDIN-Regular', 'Helvetica', 'Arial';
 }
 
 h3 {
-	font-family: 'adineuePRO-Bold';
 	text-align: center;
-	font-size:22px;
 	line-height:45px;
-	text-transform:uppercase;
 	padding-top:20px;
 }
 
@@ -113,21 +78,9 @@ h3.journey__heading{
     border: 1px solid #ccc;
 }
 
-/*#lightgallerythree {
-	padding:0px 15px 15px;
-}*/
-
-body {
-	font-size:20px;
-	line-height:16px;
-	text-align: center;
-	  font-family: 'AdihausDIN-Regular';
-}
-
 p {
     text-align: center;
 	padding-bottom:20px;
-    font-family: 'AdihausDIN-Regular';
     line-height:26px;
 }
 
@@ -194,8 +147,8 @@ div[class^='toggle-'] > div {
     top: 0;
     width: 120%;
     left: -15px;
-    background-color: rgba(0,0,0,0.45);
-    /*background-color: rgba(222,222,222,0.5);*/
+    /*background-color: rgba(0,0,0,0.45);*/
+    background-color: transparent;
     z-index: 11;
 }
 
@@ -307,39 +260,34 @@ div[class^='toggle-'] > div {
 	padding: 15px 0px;
 }
 
-.column-bottom img.gridcenter{
+.column-bottom img.gridcenter {
 	padding-bottom:15px;
 }
 
-/*.col-sm-4 .column-top{
-padding:0px 15px 0px 15px;
-}*/
-
-.col-sm-4.gridleft.mixlong, .col-sm-4.gridright.mixlong{
-
+.col-sm-4.gridleft.mixlong, .col-sm-4.gridright.mixlong {
 	padding:0px;
 }
 
-.col-sm-4.gridleft.mixlong .column-bottom{
+.col-sm-4.gridleft.mixlong .column-bottom {
 	padding-bottom:15px;
 }
 
-.column-bottom.garment{
+.column-bottom.garment {
 	border-bottom:0px solid black;
 
 }
 
-img.garment{
+img.garment {
 	padding-bottom:15px	;
 	width:100%;
 }
 
-img.garmenttop{
+img.garmenttop {
 	padding:0px 15px 15px 15px;
 	width:100%;
 }
 
-img.gridcenter.nopadding{
+img.gridcenter.nopadding {
 	padding-bottom:0px;
 }
 
@@ -348,34 +296,34 @@ img.gridcenter.nopadding{
 	padding-bottom:0px;
 }
 
-.fullcontent{
+.fullcontent {
 	padding-left:0px;
 	padding-right:0px;
 }
 
-.noborderfull{
+.noborderfull {
 	border-right:0px solid white;
 	border-left:0px solid white;
 	border:0px solid white;
 }
 
-.beginning2{
+.beginning2 {
 	margin-top:-90px
 }
 
-.beginning2-content{
+.beginning2-content {
 	padding:77px 50px;
 }
 
-.col-sm-4.themaker{
+.col-sm-4.themaker {
 	padding:0.5px 15px
 }
 
-h3.threed{
+h3.threed {
 	padding:111px 30px;
 }
 
-h3.impossible{
+h3.impossible {
 	padding:41px 30px
 }
 
@@ -387,11 +335,11 @@ h3.impossible{
 	padding:34px 15px;
 }
 
-.column-bottom.garment .hide{
-top:400px;
+.column-bottom.garment .hide {
+    top:400px;
 }
 
-img.sm{
+img.sm {
 	display: none
 }
 
@@ -414,10 +362,6 @@ img.grayscale.remove-grayscale {
     filter: none;
     -webkit-filter: grayscale(0%);
 }
-
-/*svg {
-    background:url(http://4.bp.blogspot.com/-IzPWLqY4gJ0/T01CPzNb1KI/AAAAAAAACgA/_8uyj68QhFE/s400/a2cf7051-5952-4b39-aca3-4481976cb242.jpg);
-}*/
 
 svg image {
     transition: all .6s ease;
@@ -536,7 +480,6 @@ img.grayscale.color{
 }
 
 .card__title, h3, .video__caption {
-    font-family: 'AdihausDIN-Regular';
     font-size: 30px;
     text-transform: none;
     letter-spacing: 0.2ch;
@@ -624,8 +567,6 @@ img.grayscale.color{
 .lg-backdrop {
     background-color: rgba(222,222,222,0.9);
 }
-
-
 
 .lg-outer .lg-thumb-item {
     border-radius: 0;
