@@ -376,6 +376,7 @@ svg image:hover {
 .hide {
     z-index: 6;
     pointer-events: none;
+    display: block !important;
 }
 
 .hide, .demo-gallery-poster{
@@ -385,7 +386,6 @@ svg image:hover {
     color: white !important;
     visibility: visible !important;
     padding:15px;
-    visibility: hidden;
 }
 
 img.grayscale:hover ~ .hide, .hide:hover {

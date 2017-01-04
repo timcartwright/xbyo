@@ -1462,6 +1462,7 @@ svg image:hover {
 .hide {
     z-index: 6;
     pointer-events: none;
+    display: block !important;
 }
 
 .hide, .demo-gallery-poster{
@@ -1471,7 +1472,6 @@ svg image:hover {
     color: white !important;
     visibility: visible !important;
     padding:15px;
-    visibility: hidden;
 }
 
 img.grayscale:hover ~ .hide, .hide:hover {
@@ -1794,7 +1794,7 @@ img.grayscale.color{
     }
 
     .column-bottom.garment .hide{
-    top:300px;
+        top:300px;
     }
 
     img.big{display:none;}
@@ -1815,6 +1815,7 @@ img.grayscale.color{
 
     .journey, .shop {
         border-left: 0;
+        border-right: 0;
     }
 
 }
@@ -1959,5 +1960,12 @@ img.grayscale.color{
 
     .full-image--material img.grayscale {
         width: 104%;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+
+    .shop {
+        padding-bottom: 0 !important;
     }
 }
