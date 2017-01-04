@@ -69,6 +69,14 @@ h3 {
 	padding-top:20px;
 }
 
+.full-image, .close-button, .video__player  {
+    cursor: pointer;
+}
+
+.full-image {
+    position: relative;
+}
+
 .shop__wrap {
     background-color:#282829;
     color:white;
@@ -81,7 +89,8 @@ h3 {
 }
 
 .shop__text {
-    padding-bottom: 40px;
+    margin-bottom: 15px;
+    padding-bottom: 37px;
 }
 
 .journey__wrap {
@@ -138,7 +147,7 @@ text-decoration: none;}
 }
 
 .header__image--adidas {
-    width: 58px;
+    width: 66px;
 }
 
 .header__image--xbyo {
@@ -178,13 +187,32 @@ div[class^='toggle-'] > div {
     background: #ffffff; 
 }
 
+#close {
+    display: block;
+    height: 60px;
+    position: fixed;
+    top: 0;
+    width: 120%;
+    left: -15px;
+    background-color: rgba(0,0,0,0.45);
+    /*background-color: rgba(222,222,222,0.5);*/
+    z-index: 11;
+}
+
 .close-button {
+    position: fixed;
+    right: 10px;
+    top: 11px;
+    width: 38px;
+}
+
+/*.close-button {
     position: absolute;
-    right: -10px;
+    right: -5px;
     top: -50px;
     width: 38px;
     pointer-events: none;
-}
+}*/
 
 .close-button--gallery {
     position: absolute;
@@ -232,6 +260,10 @@ div[class^='toggle-'] > div {
 	border-bottom:1px solid black;
 }
 
+.content-open .row {
+    border-color: #c8c8c8;
+}
+
 .row > div {
     padding: 15px;
 }
@@ -254,7 +286,6 @@ div[class^='toggle-'] > div {
 	border-right:1px solid black;
 }
 
-
 .gridleft{
 	border-left:1px solid black;
 }
@@ -262,6 +293,10 @@ div[class^='toggle-'] > div {
 .column-top{
 	border-bottom:1px solid black;
 	padding:15px;
+}
+
+.content-open .gridright, .content-open .gridleft, .content-open .column-top {
+    border-color:#c8c8c8;
 }
 
 .column-bottom{
@@ -380,9 +415,9 @@ img.grayscale.remove-grayscale {
     -webkit-filter: grayscale(0%);
 }
 
-svg {
+/*svg {
     background:url(http://4.bp.blogspot.com/-IzPWLqY4gJ0/T01CPzNb1KI/AAAAAAAACgA/_8uyj68QhFE/s400/a2cf7051-5952-4b39-aca3-4481976cb242.jpg);
-}
+}*/
 
 svg image {
     transition: all .6s ease;
@@ -394,10 +429,15 @@ svg image:hover {
 
 /* HOVER EFFECT */
 
+.hide {
+    z-index: 6;
+    pointer-events: none;
+}
+
 .hide, .demo-gallery-poster{
     position: absolute;
     top: 130px;
-    width:92% !important;
+    width:100% !important;
     color: white !important;
     visibility: visible !important;
     padding:15px;
@@ -434,7 +474,7 @@ img.grayscale:active ~ .hide{
 
 img.grid.grayscale.one ~ .hide:hover, 
 img.grid.grayscale.one ~ .hide:active, 
-img.grid.grayscale.one ~ .hide:focus, 
+img.grid.grayscale.one ~ .hide:focus { 
 	filter: none;
     -webkit-filter: grayscale(0%) !important;
     display:none;
@@ -484,6 +524,10 @@ img.grayscale.color{
 }
 
 /* Card */
+
+.card__figure {
+    position: relative;
+}
 
 .card__image {
     padding: 5%;
@@ -581,9 +625,7 @@ img.grayscale.color{
     background-color: rgba(222,222,222,0.9);
 }
 
-.lg-toolbar {
-    display: none;
-}
+
 
 .lg-outer .lg-thumb-item {
     border-radius: 0;
@@ -600,7 +642,15 @@ img.grayscale.color{
     display: none;
 }
 
+#lg-counter {
+    display: none;
+}
+
 @media only screen and (min-width: 992px) {
+
+    .lg-toolbar {
+        display: none;
+    }
 
     .lg-outer .lg-thumb-outer {
         height: 100% !important;
