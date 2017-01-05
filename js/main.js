@@ -17,13 +17,13 @@
     grayscaleFix();
 
     // Video player
-    $('.video__player').click(function() {
-        !this.paused ? this.pause() : this.play();
-    });
+    // $('.video__player').click(function() {
+    //     !this.paused ? this.pause() : this.play();
+    // });
 
-    $('.video__player').hover(function() {
-        this.hasAttribute('controls') ? this.removeAttribute('controls') : this.setAttribute('controls', 'controls');
-    });
+    // $('.video__player').hover(function() {
+    //     this.hasAttribute('controls') ? this.removeAttribute('controls') : this.setAttribute('controls', 'controls');
+    // });
 
     // Toggle content sections
     $('[id^=toggle-]').click(function() {

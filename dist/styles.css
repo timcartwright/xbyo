@@ -1129,19 +1129,23 @@ h3 {
 }
 
 .shop__wrap {
-    background-color:#282829;
-    color:white;
+    background-color:#f1f1f1;
+    color:#333333;
 }
 
 .shop__heading{
     margin-top: 0;
-    padding:40px 0 10px 0;
+    padding:68px 0 10px 0;
     line-height: 32px;
 }
 
 .shop__text {
     margin-bottom: 15px;
-    padding-bottom: 37px;
+    padding-bottom: 65px;
+}
+
+.shop__image-wrap {
+    position: relative;
 }
 
 .journey__wrap {
@@ -1185,8 +1189,12 @@ text-decoration: none;}
     display:         flex;
 }
 
+.header__image {
+    max-width: 63%;
+}
+
 .header__image--adidas {
-    width: 66px;
+    width: 196px;
 }
 
 .header__image--xbyo {
@@ -1258,7 +1266,6 @@ div[class^='toggle-'] > div {
     right: -10px;
     top: -50px;
     width: 38px;
-    pointer-events: none;
 }
 
 /* HEADER */
@@ -1460,7 +1467,6 @@ svg image:hover {
 /* HOVER EFFECT */
 
 .hide {
-    z-index: 6;
     pointer-events: none;
     display: block !important;
 }
@@ -1722,7 +1728,15 @@ img.grayscale.color{
     }
 
     .row-eq-height--lg {
-        display: block;
+        flex-direction: column;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+    }
+
+    .reverse--lg {
+        flex-direction: column-reverse;
+        -webkit-flex-direction: column-reverse;
+        -ms-flex-direction: column-reverse;   
     }
 
     h3.journey__heading{
@@ -1852,6 +1866,22 @@ img.grayscale.color{
         display: block;
     }
 
+    .row-eq-height--lg {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display:         flex;
+        flex-direction: column;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+    }
+
+    .reverse--lg {
+        flex-direction: column-reverse;
+        -webkit-flex-direction: column-reverse;
+        -ms-flex-direction: column-reverse;
+    }
+
     .hide, .demo-gallery-poster{
         top: 30%;
     }
@@ -1963,9 +1993,9 @@ img.grayscale.color{
     }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1199px) {
+@media only screen and (max-width: 499px) {
 
-    .shop {
-        padding-bottom: 0 !important;
+    .header__image {
+        max-width: 85%;
     }
 }

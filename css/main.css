@@ -43,19 +43,23 @@ h3 {
 }
 
 .shop__wrap {
-    background-color:#282829;
-    color:white;
+    background-color:#f1f1f1;
+    color:#333333;
 }
 
 .shop__heading{
     margin-top: 0;
-    padding:40px 0 10px 0;
+    padding:68px 0 10px 0;
     line-height: 32px;
 }
 
 .shop__text {
     margin-bottom: 15px;
-    padding-bottom: 37px;
+    padding-bottom: 65px;
+}
+
+.shop__image-wrap {
+    position: relative;
 }
 
 .journey__wrap {
@@ -99,8 +103,12 @@ text-decoration: none;}
     display:         flex;
 }
 
+.header__image {
+    max-width: 63%;
+}
+
 .header__image--adidas {
-    width: 66px;
+    width: 196px;
 }
 
 .header__image--xbyo {
@@ -172,7 +180,6 @@ div[class^='toggle-'] > div {
     right: -10px;
     top: -50px;
     width: 38px;
-    pointer-events: none;
 }
 
 /* HEADER */
@@ -374,7 +381,6 @@ svg image:hover {
 /* HOVER EFFECT */
 
 .hide {
-    z-index: 6;
     pointer-events: none;
     display: block !important;
 }
